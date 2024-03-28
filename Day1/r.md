@@ -5,3 +5,6 @@
     - mkdir                   : to make a new directory
 
    ![alt text](image-1.png)
+
+
+   ## Features {#features}
