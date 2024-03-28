@@ -7,9 +7,9 @@
    ![alt text](image-1.png)
 
 
-   ## Features {#features}
+   Features {#features}
 
-   [Features](#features)
+   [ ##Features](#features)
 
 
 features are given as : 
