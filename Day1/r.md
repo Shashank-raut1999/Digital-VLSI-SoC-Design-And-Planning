@@ -9,6 +9,47 @@
 
    ## [Features](#features)
 
+
+    okp
+    pl
+    ld
+    sd
+    as
+    dd
+    ed
+    eded
+    e
+
+    dwd
+    wd
+    dw
+    ddwd
+    wdwd
+    de
+    f
+    ef
+    gteh
+    tht
+    ht
+    grg
+    rg
+    r
+    rg
+    rg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    // %  [Features](#features)
 
 
