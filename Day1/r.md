@@ -42,25 +42,25 @@ It consists of the main processor , SDRAM chip(memory) , ADC (analog to digital 
  ## 5. Simple RTL to GDSll flow
  + ![alt text](image.png) <br>
 
-**Step 1. Synthesis** : This step converts a RTL design to a circuit by using . elements from a Standard Cell Library. The resultant circuit is called the Gate Level Netlist. Standard Cells have regular layouts and each Standard Cell has different views/models (like Electrical, HDL, SPICE)
+<u>**Step 1. Synthesis**</u> : This step converts a RTL design to a circuit by using . elements from a Standard Cell Library. The resultant circuit is called the Gate Level Netlist. Standard Cells have regular layouts and each Standard Cell has different views/models (like Electrical, HDL, SPICE)
 
- **Step 2. Floor/Power Planning** : In this step our aim is to create a plan area dimensions for different components in a chip and create a robust power distributuion network for chip components.
+<u>**Step 2. Floor/Power Planning**</u> : In this step our aim is to create a plan area dimensions for different components in a chip and create a robust power distributuion network for chip components.
   +  ![alt text](image-1.png) ![alt text](image-2.png) <br>
  In power planning, the chip is powered by multiple VDD and ground pins. The supply and ground pins are connected to all components using power straps and power rings. 
 
- **Step 3. Placement** : We need to place the cells of netlist on the sites. Placement must be such that the interconnect delay is minimum and to be able to get efficient routing. 
+<u>**Step 3. Placement**</u> : We need to place the cells of netlist on the sites. Placement must be such that the interconnect delay is minimum and to be able to get efficient routing. 
 
- **Step 4. Clock Tree Synthesis** : We need to create a clock distribution network which delivers clock to all the sequential elements in the circuit.
+<u>**Step 4. Clock Tree Synthesis**</u> : We need to create a clock distribution network which delivers clock to all the sequential elements in the circuit.
  The clock must have minimum skew.
 
- **Step 5. Routing** : This step involves implementing interconnects to connect various components in the circuit. There are a fixed number of metal layers on a wafer, so we need to develop vertical and horizontal patterns to route the interconnects through these metal layers. The metal layer specs are defined in the PDK. 
+<u>**Step 5. Routing** </u> : This step involves implementing interconnects to connect various components in the circuit. There are a fixed number of metal layers on a wafer, so we need to develop vertical and horizontal patterns to route the interconnects through these metal layers. The metal layer specs are defined in the PDK. 
 + The routing grid is formed by meta tracks.
 + We use divide and conquer approach to implement it:
   + Global routing is used to generate routing guides.
   + Detailed routing is the used to implement the actual wiring.   
  ![alt text](image-3.png)
 
-**Step 6. Sign Off** : 
+<u> **Step 6. Sign Off** </u> : 
 + Physical Verifications :
   + DRC(Design Rules Checking) makes sure that the final layout follows all the design rules.
   + LVS (Layout vs Schematic) is done to check whether the generated final layout performs similar function as the initial netlist that we started with.
