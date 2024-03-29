@@ -150,7 +150,7 @@ It consists of the main processor , SDRAM chip(memory) , ADC (analog to digital 
     - __src file__ containing the verilog file for RTL.
     - pdk file
     - __config.tcl__ file is used to bypass the configurations of the specifications which are bydefault present in that design.
- - we need to set a file system which is specific to the flow so that we can fetch the files in whichever step of the flow we need it :
+  - we need to set a file system which is specific to the flow so that we can fetch the files in whichever step of the flow we need it :
     - run __prep -design picorv32a__ command
          - ![prep design](image-7.png)
     - the above command creates a __runs__ folder in picorv32a folder which contains various files.
@@ -159,7 +159,7 @@ It consists of the main processor , SDRAM chip(memory) , ADC (analog to digital 
         - the __results__ folder contains the results of different processes which will be done in the process.
         - __log__ folder contains all the logs.
         - there is a __config.tcl__ file which is present in this folder which shows the values of parameters which will considered during run. this config.tcl file is different than the one we saw earlier. The parameters in this file can be modified during the process steps. 
-
+  - we then run the __run_synthesis__ command to run the "yosis" and "abc" tools.  
 
    
 
