@@ -8,7 +8,7 @@
 
 ## 2. Block diagram of a SoC(System on Chip)
 
-  +  ![alt text](<Block diagram of processor.png>)    
+  +  ![Processor Block Diagarm](<Block diagram of processor.png>)    
      
 This is the basic block diagram of the processor or SoC. It gives us an abstract idea of the different components present in a chip.
 It consists of the main processor , SDRAM chip(memory) , ADC (analog to digital converters) , GPIOs(general purpose Input Output registers), communicatioin protocols(like I2C,UART ) etc.
@@ -58,7 +58,7 @@ It consists of the main processor , SDRAM chip(memory) , ADC (analog to digital 
 + We use divide and conquer approach to implement it:
   + Global routing is used to generate routing guides.
   + Detailed routing is the used to implement the actual wiring.   
- ![alt text](image-3.png)
+  + ![Routing](image-3.png)
 
 <u> **Step 6. Sign Off** </u> : 
 + Physical Verifications :
@@ -68,6 +68,54 @@ It consists of the main processor , SDRAM chip(memory) , ADC (analog to digital 
    + STA(Static Timing Analysis) makes sure that all the timing constraints are met.
 
 
+## 6. Introduction to Openlane:
+  - OpenLane integrates various open-source EDA tools under one roof.
+  - It is tuned for PDKs of SkyWater 130nm , XFab180 and GF130G.
+  - It can be used to genarate GDSll layout of macros and chips.
+  - Can be operated in 2 modes :
+        - Autonomous : We directly get the GDSll file.
+        - Interactive : We can do all the steps individually and do experimentation and look at the results at output of each stage.
+  - It has a feature called Design flow exploration which helps us to find the best set of flow configurations.
+  - Openlane ASIC flow:
+      + ![OPENLANE ASIC flow](image-4.png)    
+        - RTL Synthesis Using yosis and abc:
+             - yosis is fed with RTL design along with design constraints and it generates the logic circuit using generic cells.
+             - abc maps the circuit and then generates the optimized circuit using standard cell library.
+             -abc needs to be guided using abc scripts which are there in OPENLANE refered to as synthesis strategies.
+             - different strategies are present for area or power etc which may be used for different applications. 
+        - Synthesis Exploration Utility:
+           - Shows how the delay and area of a design is affected for a particular strategy. We can select the best strategy based on this.
+           - Can be used for openlane regression testing which shows the runtime, cell counts and the timing violations in design.
+        - DFT(Design For Test) :
+            - Uses an open source App known as "Fault".
+            - Performs:
+             - Scan Insertion
+             - ATPG(Automatic Test Pattern Generation)
+             - Test Pattern Compaction 
+             - Fault coverage and Fault Simulation
+        - Physical Implementation:
+           - Uses an open source App known as "OpenROAD".
+           - Performs:
+             - Floor/Power Planning
+             - Insertion of End Decoupling Capacitors and Tap Cells 
+             - Placement : Global and Detailed
+             - Post Placement optimization
+             - Clock Tree Synthesis
+             - Routing : Global and Detailed
+        - LEC(Logic Equivalence Checking):
+             - Every time a modification is done to netlist, we need to verify whether the modified version performs the same function for which it was designed. 
+             - Net-list gets modified during CTS and postplacement optimization.
+             - This LEC is done by yosis.
+        - During Physical Implementation, we perform a special step known as    "Fake Antenna Diode Insertion" to check for antenna rules violations.
+           - Antenna diode cells are provided by SCL and can be used to leak away the charges which causes distortions.
+        - Sign-Off :
+          - STA:
+            - RC Extraction
+            - OpenSTA is a tool in OpenROAD which performs STA to check for timing violations.
+          - Physical Verification:
+             - 'Magic' tool is used for DRC and SPICE extraction from the layout.
+             - 'Netgen' and 'Magic' are used for LVS in which the SPICE extracted by magic is compared with Verilog netlist.
+        
 
 
 
@@ -89,7 +137,7 @@ It consists of the main processor , SDRAM chip(memory) , ADC (analog to digital 
 
 
 
-# Basic Linux Commands
+## Basic Linux Commands
     - cd <name_of_folder>     : opens the particular folder
     - ls                      : lists the content of the folder
     - pwd                     : shows the present working directory
