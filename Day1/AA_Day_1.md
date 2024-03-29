@@ -176,9 +176,10 @@ It consists of the main processor , SDRAM chip(memory) , ADC (analog to digital 
          - ![generated netlist](<Result of synthesised Netlist.png>)
   - we can check the reports by going into the __reports__ folder which is present in  __runs__ folder. 
          - ![reports folder](<reports folder .png>)
+
          
 
-
+- End 
 
          
          
