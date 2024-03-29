@@ -44,6 +44,7 @@
       - ![alt text](image-7.png)
     - **Voltage Droop**
       - ![alt text](image-8.png)
+        
    - The voltage Droop and Ground Bounce problems will occur when we are using a single voltage source for more number of cells due to which this single supply source is not able to supply enough charge.
 
    **We can solve this by using multiple power supply lines (known as MESH) as shown in figure below:**  
