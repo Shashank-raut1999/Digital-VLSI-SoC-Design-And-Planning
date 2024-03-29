@@ -6,7 +6,7 @@
   - **Aspect Ratio** = *Height* / *Width*
   -  Ex:   Netlist occupies an area of 4 sq units  
 
-       - ![Netlist area](image.png ) 
+       - ![Netlist area](image.png width=60%) 
       
       - Core has a total area of 8 sq units
 
