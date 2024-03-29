@@ -4,7 +4,9 @@
     - pwd                     : shows the present working directory
     - mkdir                   : to make a new directory
 
-   ![alt text](image-1.png)   
+![alt text](<Basic Linux Commands.png>)
+
+
 
 
    
