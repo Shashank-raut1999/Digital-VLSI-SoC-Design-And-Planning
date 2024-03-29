@@ -137,9 +137,28 @@ It consists of the main processor , SDRAM chip(memory) , ADC (analog to digital 
       - libs.tech are the file which are specific to the tool.
   - We will be working on the 'sky_fd_sc_hd' variant.
 
-
-  
-
+## Design Preparation step:
+  - ![Opening openLANE](image-5.png)
+  - we need to run the __docker__ command in terminal to invoke openlane.
+  - then we need to run the __./flow.tcl -interactive__ command to do a step by step process. If we don't run the interactive command then the process will  get completed in one step.
+  -    we need to import all the packages to proceed further so use the following command:
+     - __package require openlane 0.9__
+      
+  - ![design file](image-6.png)
+  - __designs__ folder in the openlane folder contains all the designs.
+  - when we open the folder of __picorv32a__ design which contains:
+    - __src file__ containing the verilog file for RTL.
+    - pdk file
+    - __config.tcl__ file is used to bypass the configurations of the specifications which are bydefault present in that design.
+ - we need to set a file system which is specific to the flow so that we can fetch the files in whichever step of the flow we need it :
+    - run __prep -design picorv32a__ command
+         - ![prep design](image-7.png)
+    - the above command creates a __runs__ folder in picorv32a folder which contains various files.
+        - ![alt text](image-8.png)     
+        - the __merged.lef__ file in the __tmp__ folder here contains all the cell level and wire level details of the design.
+        - the __results__ folder contains the results of different processes which will be done in the process.
+        - __log__ folder contains all the logs.
+        - there is a __config.tcl__ file which is present in this folder which shows the values of parameters which will considered during run. this config.tcl file is different than the one we saw earlier. The parameters in this file can be modified during the process steps. 
 
 
    
