@@ -4,7 +4,7 @@
        
  ![alt text](Arduino-2.png)
 
-  This is an arduino microcontroller board. The encircled area shows the  which is interfaced with other components of the board. The designing of this chip from abstract level all the way down to the fabrication is done by RTL to GDSll flow. 
+  This is an arduino microcontroller board. The encircled area shows the chip(microprocessor) which is interfaced with other components of the board. The designing of this chip from abstract level all the way down to the fabrication is done by RTL to GDSll flow. 
 
 
 
