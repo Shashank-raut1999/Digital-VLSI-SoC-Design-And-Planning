@@ -2,23 +2,23 @@
 
 ## 1. Arduino Board
        
- ![alt text](Arduino-2.png)
+ +  ![alt text](Arduino-2.png)
 
-  This is an arduino microcontroller board. The encircled area shows the chip(microprocessor) which is interfaced with other components of the board. The designing of this chip from abstract level all the way down to the fabrication is done by RTL to GDSll flow. 
+ - This is an arduino microcontroller board. The encircled area shows the chip(microprocessor) which is interfaced with other components of the board. The designing of this chip from abstract level all the way down to the fabrication is done by RTL to GDSll flow. 
 
 ## 2. Block diagram of a SoC(System on Chip)
 
- ![alt text](<Block diagram of processor.png>)    
+  +  ![alt text](<Block diagram of processor.png>)    
      
 This is the basic block diagram of the processor or SoC. It gives us an abstract idea of the different components present in a chip.
 It consists of the main processor , SDRAM chip(memory) , ADC (analog to digital converters) , GPIOs(general purpose Input Output registers), communicatioin protocols(like I2C,UART ) etc.
 
 ###  Chip is connected to the package with the help of bond wires:
-![alt text](<Chip & Package connection.png>)
+  + ![alt text](<Chip & Package connection.png>)
 
 ## 3. How does a chip look like?
- ![alt text](<Macros and Foundry IP's.png>)
- ![alt text](<How chip looks like.png>)
++ ![alt text](<Macros and Foundry IP's.png>)
++ ![alt text](<How chip looks like.png>)
 
  - **Parts of a chip**:
      - **PADS** : The blue squares around the edge are called PADS. These docks have connection points that allow the chip to send and receive messages with the outside world. These pads are connected to the pins of package  chip via bond wires.
@@ -40,12 +40,12 @@ It consists of the main processor , SDRAM chip(memory) , ADC (analog to digital 
     
     
  ## 5. Simple RTL to GDSll flow
- ![alt text](image.png)
+ + ![alt text](image.png) <br>
  **Step 1. Synthesis** : This step converts a RTL design to a circuit by using . elements from a Standard Cell Library. The resultant circuit is called the Gate Level Netlist. Standard Cells have regular layouts and each Standard Cell has different views/models (like Electrical, HDL, SPICE)
 
  **Step 2. Floor/Power Planning** : In this step our aim is to create a plan area dimensions for different components in a chip and create a robust power distributuion network for chip components.
-  +  ![alt text](image-1.png) ![alt text](image-2.png)
-   In power planning, the chip is powered by multiple VDD and ground pins. The supply and ground pins are connected to all components using power straps and power rings. 
+  +  ![alt text](image-1.png) ![alt text](image-2.png) <br>
+ In power planning, the chip is powered by multiple VDD and ground pins. The supply and ground pins are connected to all components using power straps and power rings. 
 
  **Step 3. Placement** : We need to place the cells of netlist on the sites. Placement must be such that the interconnect delay is minimum and to be able to get efficient routing. 
 
