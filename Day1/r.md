@@ -137,7 +137,7 @@ It consists of the main processor , SDRAM chip(memory) , ADC (analog to digital 
       - libs.tech are the file which are specific to the tool.
   - We will be working on the 'sky_fd_sc_hd' variant.
 
-## Design Preparation step:
+## 8. Design Preparation step:
   - ![Opening openLANE](image-5.png)
   - we need to run the __docker__ command in terminal to invoke openlane.
   - then we need to run the __./flow.tcl -interactive__ command to do a step by step process. If we don't run the interactive command then the process will  get completed in one step.
@@ -159,11 +159,29 @@ It consists of the main processor , SDRAM chip(memory) , ADC (analog to digital 
         - the __results__ folder contains the results of different processes which will be done in the process.
         - __log__ folder contains all the logs.
         - there is a __config.tcl__ file which is present in this folder which shows the values of parameters which will considered during run. this config.tcl file is different than the one we saw earlier. The parameters in this file can be modified during the process steps. 
-  - we then run the __run_synthesis__ command to run the "yosis" and "abc" tools.  
+  - we then run the __run_synthesis__ command to run the "yosis" and "abc" tools.
+    - ![synthesis complete](image-9.png)  
 
-   
+  - The process commands should be run in the following order exactly:
+    - ![Commandflow](<Command execution flow.png>)
+
+  - FLOP Ratio Calculation:
+      - ![FLOP ratio](<FLOP ratio calculation.png>)
+      - Flop Ratio = Total no. of D FFs / Total no. of cells
+      - Flop Ratio = 1613/14876 = 0.108 
+      - Flop Ratio Percentage = 10.8 % 
 
 
+  - we can see the netlist by opening the file named  __picorv32a.synthesis.v__ 
+         - ![generated netlist](<Result of synthesised Netlist.png>)
+  - we can check the reports by going into the __reports__ folder which is present in  __runs__ folder. 
+         - ![reports folder](<reports folder .png>)
+         
+
+
+
+         
+         
 
 
 
