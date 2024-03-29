@@ -124,9 +124,21 @@ It consists of the main processor , SDRAM chip(memory) , ADC (analog to digital 
  - **ls**     : lists the content of the folder
  - **pwd**    : shows the present working directory
  - **mkdir**  : to make a new directory
+ - ***command* --help** : shows the complete use that command
+ - **clear**  : clears the terminal screen
+
+## 7. Openlane Directory Structure: 
+  - ![Openlane Directory](<Openlane directory.png>)
+  - the 'skywater-pdk' file contains all the pdk files like timing libraries, lef lib, tech lib, cell lib etc. which are needed by foundry to fabricate that chip. These files are made to work with commercial EDA tools and not with opensource EDA tools. 
+  - the 'open_pdks' file contains scripts that make the commercial pdk files compatible  with Opensource EDA tools.  
+  - the 'sky130A' is the file which we are using in our workshop:
+    - It contains 
+      -  libs.ref : contains all the files specific to the technology like cell libraries, timing libraries etc.
+      - libs.tech are the file which are specific to the tool.
+  - We will be working on the 'sky_fd_sc_hd' variant.
 
 
-
+  
 
 
 
