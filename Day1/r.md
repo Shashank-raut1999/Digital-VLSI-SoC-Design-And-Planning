@@ -78,22 +78,22 @@ It consists of the main processor , SDRAM chip(memory) , ADC (analog to digital 
   - It has a feature called Design flow exploration which helps us to find the best set of flow configurations.
   - Openlane ASIC flow:
       + ![OPENLANE ASIC flow](image-4.png)    
-        - RTL Synthesis Using yosis and abc:
+        - i) RTL Synthesis Using yosis and abc:
              - yosis is fed with RTL design along with design constraints and it generates the logic circuit using generic cells.
              - abc maps the circuit and then generates the optimized circuit using standard cell library.
              -abc needs to be guided using abc scripts which are there in OPENLANE refered to as synthesis strategies.
              - different strategies are present for area or power etc which may be used for different applications. 
-        - Synthesis Exploration Utility:
+        - ii) Synthesis Exploration Utility:
            - Shows how the delay and area of a design is affected for a particular strategy. We can select the best strategy based on this.
            - Can be used for openlane regression testing which shows the runtime, cell counts and the timing violations in design.
-        - DFT(Design For Test) :
+        - iii) DFT(Design For Test) :
             - Uses an open source App known as "Fault".
             - Performs:
              - Scan Insertion
              - ATPG(Automatic Test Pattern Generation)
              - Test Pattern Compaction 
              - Fault coverage and Fault Simulation
-        - Physical Implementation:
+        - iv) Physical Implementation:
            - Uses an open source App known as "OpenROAD".
            - Performs:
              - Floor/Power Planning
@@ -102,13 +102,13 @@ It consists of the main processor , SDRAM chip(memory) , ADC (analog to digital 
              - Post Placement optimization
              - Clock Tree Synthesis
              - Routing : Global and Detailed
-        - LEC(Logic Equivalence Checking):
+        - v) LEC(Logic Equivalence Checking):
              - Every time a modification is done to netlist, we need to verify whether the modified version performs the same function for which it was designed. 
              - Net-list gets modified during CTS and postplacement optimization.
              - This LEC is done by yosis.
-        - During Physical Implementation, we perform a special step known as    "Fake Antenna Diode Insertion" to check for antenna rules violations.
+        - vi) During Physical Implementation, we perform a special step known as    "Fake Antenna Diode Insertion" to check for antenna rules violations.
            - Antenna diode cells are provided by SCL and can be used to leak away the charges which causes distortions.
-        - Sign-Off :
+        - vii) Sign-Off :
           - STA:
             - RC Extraction
             - OpenSTA is a tool in OpenROAD which performs STA to check for timing violations.
