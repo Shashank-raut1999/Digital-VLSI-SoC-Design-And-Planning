@@ -41,7 +41,8 @@ It consists of the main processor , SDRAM chip(memory) , ADC (analog to digital 
     
  ## 5. Simple RTL to GDSll flow
  + ![alt text](image.png) <br>
- **Step 1. Synthesis** : This step converts a RTL design to a circuit by using . elements from a Standard Cell Library. The resultant circuit is called the Gate Level Netlist. Standard Cells have regular layouts and each Standard Cell has different views/models (like Electrical, HDL, SPICE)
+
+**Step 1. Synthesis** : This step converts a RTL design to a circuit by using . elements from a Standard Cell Library. The resultant circuit is called the Gate Level Netlist. Standard Cells have regular layouts and each Standard Cell has different views/models (like Electrical, HDL, SPICE)
 
  **Step 2. Floor/Power Planning** : In this step our aim is to create a plan area dimensions for different components in a chip and create a robust power distributuion network for chip components.
   +  ![alt text](image-1.png) ![alt text](image-2.png) <br>
