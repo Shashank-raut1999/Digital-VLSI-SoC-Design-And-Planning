@@ -96,7 +96,10 @@
      - The __def__(design exchange format) file contains all the floorplan info after doing the floorplan process.
         - ![alt text](image-19.png)
 
-     - In this  def file we can observe : ![alt text](image-20.png)
+     - In this  def file we can observe :
+      ![alt text](image-20.png)
+
+      
        UNITS DISTANCE MICRONS 1000 : Database units per micron
        DIEAREA (X0,Y0) (Xf,Yf) : shows the dimensions.
       
