@@ -99,9 +99,9 @@
      - In this  def file we can observe :
       ![alt text](image-20.png)
 
-      
-       UNITS DISTANCE MICRONS 1000 : Database units per micron
-       DIEAREA (X0,Y0) (Xf,Yf) : shows the dimensions.
+
+      - UNITS DISTANCE MICRONS 1000 : Database units per micron
+      - DIE AREA (X0,Y0) (Xf,Yf) : shows the dimensions.
       
       - so we need to divide these dimensions by 1000 to get the size in microns  (i.e.micrometers)
       -  Xf = 660685/1000 = 660.685 um
