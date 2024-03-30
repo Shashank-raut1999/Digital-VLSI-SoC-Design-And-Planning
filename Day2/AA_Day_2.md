@@ -105,8 +105,8 @@
       -  Yf = 671405/1000 = 671.405 um
       - Die Area = Xf * Yf = 443587.212 (um)^2
 
- - Since we can not read everything from a def file, we will use __magic__ tool to visually look at the floorplan. Execute the following command to run magic:
-   ![magic tool command](image-21.png)
+  - Since we can not read everything from a def file, we will use __magic__ tool to visually look at the floorplan. Execute the following command to run magic:
+    - ![alt text](image-32.png)
    - 
 
      - ![magic](image-22.png)
@@ -136,4 +136,3 @@
       - Ex: ![alt text](image-31.png)
     
     - The wires of different blocks gettin crossed will be routed through different layers. 
-    
