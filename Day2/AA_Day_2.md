@@ -109,19 +109,19 @@
     - ![alt text](image-32.png)
    - 
 
-     - ![magic](image-22.png)
-     - This is the view of floorplan in the magic tool.
-     - We can make the following observations in this tool :
-       - As seen in the config.tcl file, horizontal pins are on __metal layer3__ :
-       - ![alt text](image-23.png)
-       - Vertical pins are on __metal layer2__ :
-       - ![alt text](image-25.png)
+   - ![magic](image-22.png)
+  - This is the view of floorplan in the magic tool.
+  - We can make the following observations in this tool :
+      - As seen in the config.tcl file, horizontal pins are on __metal layer3__ :
+      - ![alt text](image-23.png)
+      - Vertical pins are on __metal layer2__ :
+      - ![alt text](image-25.png)
      
 
-     - We can see the tapcells present on the floor which avoid the latchup occuring in the CMOS by connecting N-well to Vdd and substrate to the ground. : ![alt text](image-26.png) 
+    - We can see the tapcells present on the floor which avoid the latchup occuring in the CMOS by connecting N-well to Vdd and substrate to the ground. : ![alt text](image-26.png) 
 
-     - There are standard cells present on the floor:
-         - ![alt text](image-27.png)
+    - There are standard cells present on the floor:
+      - ![alt text](image-27.png)
 
 
   ## Netlist Binding and Physical Cells:
@@ -135,7 +135,7 @@
      - We need to optimize the placement and also use __repeaters__(buffers)so that the cells which are placed far from the pin ports can get correct logic signal which can get deteriorated due to longer wire losses.
       - Ex: ![alt text](image-31.png)
     
-    - The wires of different blocks gettin crossed will be routed through different layers. 
+   - The wires of different blocks getting crossed will be routed through different layers. 
   
   - **Placement** : 
     - Placement  occurs in two stages : **Global** and **Detailed** and there are different tools to perform these.
@@ -189,10 +189,10 @@
         - Based on the definitions of parameters present in the *Timing Characterization* step, we calculate upcoming definitions.
           - ![alt text](image-37.png)
 
-         -  If the treshold points are not chosen correctly we can get a problem of *Negative time delay* .
+        -  If the treshold points are not chosen correctly we can get a problem of *Negative time delay* .
         - ![alt text](image-38.png)
 
-         - We can also get negative time delay if the input slew is very high which occurs if the length of wire for input is large.
+        - We can also get negative time delay if the input slew is very high which occurs if the length of wire for input is large.
        - ![alt text](image-39.png)
 
 
