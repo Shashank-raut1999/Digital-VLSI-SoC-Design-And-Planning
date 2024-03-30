@@ -136,3 +136,23 @@
       - Ex: ![alt text](image-31.png)
     
     - The wires of different blocks gettin crossed will be routed through different layers. 
+  
+  - **Placement** : 
+    - Placement  occurs in two stages : **Global** and **Detailed** and there are different tools to perform these.
+    - __Global Placement__ :
+       - Focuses on coarse placement and there are no legalizations happening here which means that there may be some overlaps of cell areas happening here.
+       - Main aim is to reduce wire length (known as Half Parameter Wire Length i.e. HPWL in OPENLANE). 
+       
+    - __Detailed Placement__ :
+      - This is done to solve the legalization problem after global placement.    
+
+    -  we use the ``` run_placement ``` command to run.
+
+     - ![alt text](image-33.png)
+    
+
+    - Then we will run the following command to view the placement in magic tool :
+      - ![alt text](image-34.png)
+
+      - we can observe the placement of standard cells as follows:
+       - ![alt text](image-35.png)
