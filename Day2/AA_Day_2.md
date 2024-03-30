@@ -69,4 +69,71 @@
 
         - ![alt text](image-13.png)  
 
+## 6. LAB: 
+   - ![alt text](image-14.png) 
+   - The README.md file in the above shown location contains all the information related to the processes flow parameters.
+     - ![alt text](<Reademe for configurartion folder.png>)
+     - Each parameter can be termed as a switch whose value can be modified during the process flow but not in this file.
 
+     
+
+  - The __floorplan.tcl__ file in the __configuration__ folder contains the system default values for the parameters. This file has the lowest priority.
+       - ![alt text](image-15.png) 
+
+    -  
+       After that the priority is for __config.tcl__ file in the following location:
+
+         ![alt text](image-16.png)
+    
+    - And then the highest priority is for __sky130A_sky130_fd_hd_sc_config.tcl__ file in the above shown location.
+
+    - we then run the __run_floorplan__ command exactly where we were left with the __synthesis_succesful__ message.
+    -  ![Floorplan succesful](image-17.png)
+
+    - To view the results of the completed floorplan we go to the following location
+       -  ![alt text](image-24.png) 
+
+     - The __def__(design exchange format) file contains all the floorplan info after doing the floorplan process.
+        - ![alt text](image-19.png)
+
+     - In this  def file we can observe : ![alt text](image-20.png)
+       UNITS DISTANCE MICRONS 1000 : Database units per micron
+       DIEAREA (X0,Y0) (Xf,Yf) : shows the dimensions.
+      
+      - so we need to divide these dimensions by 1000 to get the size in microns  (i.e.micrometers)
+      -  Xf = 660685/1000 = 660.685 um
+      -  Yf = 671405/1000 = 671.405 um
+      - Die Area = Xf * Yf = 443587.212 (um)^2
+
+ - Since we can not read everything from a def file, we will use __magic__ tool to visually look at the floorplan. Execute the following command to run magic:
+   ![magic tool command](image-21.png)
+   - 
+
+     - ![magic](image-22.png)
+     - This is the view of floorplan in the magic tool.
+     - We can make the following observations in this tool :
+       - As seen in the config.tcl file, horizontal pins are on __metal layer3__ :
+       - ![alt text](image-23.png)
+       - Vertical pins are on __metal layer2__ :
+       - ![alt text](image-25.png)
+     
+
+     - We can see the tapcells present on the floor which avoid the latchup occuring in the CMOS by connecting N-well to Vdd and substrate to the ground. : ![alt text](image-26.png) 
+
+     - There are standard cells present on the floor:
+         - ![alt text](image-27.png)
+
+
+  ### Netlist Binding and Physical Cells:
+
+   - **Library** : It consists info about various types of cells, their shapes, sizes and delays. We can have same logic function being performed by cells of different shapes and delays .
+   - Ex : ![alt text](image-28.png)
+     
+   - **Placement** : By considering the physical shapes of cells from library, we need to place the cells on the floor efficiently.
+     - ![alt text](image-29.png)
+
+     - We need to optimize the placement and also use __repeaters__(buffers)so that the cells which are placed far from the pin ports can get correct logic signal which can get deteriorated due to longer wire losses.
+      - Ex: ![alt text](image-31.png)
+    
+    - The wires of different blocks gettin crossed will be routed through different layers. 
+    
