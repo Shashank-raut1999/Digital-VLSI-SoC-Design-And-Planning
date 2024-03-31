@@ -220,7 +220,10 @@
      - We can make a rectangle by mouse clicks and the hovering the mouse pointer over the *metal3 contact* icon and pressing the ```p``` button.
      - Then we can execute the command ``` cif see VIA2 ``` in the *tkcon* terminal.
      - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/1fc28ab8-4c47-424f-94ec-87b6dd7c9a05)
-     - 
+     - The squares in the above layout don't actually exist in the layout but they actually represent is a mask layer for **via2** when we will generate GDS from layout.
+     - we can select the layout and press ``` d ``` to delete that layout.
+     - We can press __Shift+Z__ to zoom out and __Ctrl+Z__ to zoom in.
+       
  
 
 
