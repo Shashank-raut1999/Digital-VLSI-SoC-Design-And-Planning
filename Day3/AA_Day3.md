@@ -130,7 +130,7 @@
            to invoke the ngspice tool.
            - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/bc422fe1-fae0-4bea-92df-9da87ea1decb)
            - We will get the following view:
-              - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/d42091f3-f04e-4847-81c0-5bea26a4fa88)
+             - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/d42091f3-f04e-4847-81c0-5bea26a4fa88)
 
            - We will then execute the command
                    ```     plot y vs time a  ```
