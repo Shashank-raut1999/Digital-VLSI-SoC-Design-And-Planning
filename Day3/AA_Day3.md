@@ -196,12 +196,17 @@
    - ``` wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz ```
  
    - To extract the lab files from the downloaded file:
-   - tar xfz drc_tests.tgz
+   - ``` tar xfz drc_tests.tgz ```
  
    - Then go inside the lab folder **drc_tests**.
    - Then we can list all the directories by using the ``` ls -al ``` command.
-   - Then we will view the .magicrc file by using the ``` gvim .magicrc ``` command.
-   - Then we will open the magic tool by using ``` magic -d XR & ``` command.
+   - Then we will view the .magicrc file by using the ``` gvim .magicrc ``` command.This file is the startup script for magic. It tells magic where to find the technology file. The technology file is already made available locally in the same directory because we may need to make changes to this file.
+   - Then we will open the magic tool by using ``` magic -d XR & ``` command to start the magic in better graphics.
+
+   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/fbef7633-258b-46f1-9a33-ac460639299c)
+   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/2bcccf49-5880-4a16-a29c-f6084a95e5f3)
+
+   - 
 
 
   
