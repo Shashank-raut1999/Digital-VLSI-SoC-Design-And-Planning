@@ -137,12 +137,34 @@
 
            -  The input and output transient waveforms will be plotted as follows:
             - <img src="https://github.com/Shashank-raut1999/SoC/assets/165283786/8a150de3-0ed6-4be2-a249-be8d7b84329f" width="70%">
+            - When we click on any point in that  graph, the corresponding x and y values are immediately displayed in the terminal. We can use this feature to calculate risetime, falltime, etc.
+               
           - We can  execute the ```   exit  ``` command to exit ngspice.
                    
-   
 
+ 
+## Rise Time = Time taken by output to rise to 80% of its final value - Time taken by output to rise to 20% of its final value
+   -  output rises to 20% of its final value at 2.1825 ns.
+   -  output rises to 80% of its final value at 2.2464 ns
+   -  **RISE TIME = 2.2464  - 2.1825 = 0.0639 ns = 63.9ps**
+   -  Screenshot at 20% (i.e 0.66V) :
+   -   ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/039283cd-9fad-4c76-a8de-403bbd173ced)
+   -   Screenshot at 80% (i.e. 2.64V) :
+   -   ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/dd765fb3-8888-4ead-91bf-fef37f933cc8)
 
+## Fall transition time = Time taken by output to fall to 80% of its final value - Time taken by output to fall to 20% of its final value
+ - output rises to 20%(i.e. 2.64V) of its final value at 4.0527 ns
+ - output rises to 80%(i.e. 660mV) of its final value at 4.0951 ns
+ - **FALL TIME =4.0951 - 4.0527 = 0.0424ns = 42.4ps**
+ - Screenshot at 20% :
+ - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/22733522-8410-4466-a426-039d78efc356)
+ - Screenshot at 80% :
+ - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/1e508261-d0c5-4b3c-8699-c89e946d9dfb)
 
+## Rise Cell Delay = Time taken by output to rise to 50% of its final value - Time taken by input to fall to 50% of its final value
+  - 50% of 3.3V = 1.65V
+  - Screenshot at 50% values of input and output
+  - 
 
               
 
