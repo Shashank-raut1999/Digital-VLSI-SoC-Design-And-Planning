@@ -50,21 +50,40 @@
          
 # CMOS Fabrication Process:
 
-1. Selection of substrate :
+**1. Selection of substrate :**
    
    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/42116f08-9f7b-44bf-bf33-9ce78ff8d8fc)
+  
 
-3. Active Region Formation:
+
+**2. Active Region Formation:**
 
    
-   - This step is done to ensure isolation when both the NMOS and PMOS will be made in the same substrate.
+   - This step is done to ensure isolation between NMOS and PMOS when both the NMOS and PMOS will be made in the same substrate.
    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/eb7f612e-1017-4bd7-bde2-6c4ec53621d3)
 
-4. N-Well and P-Well Formation :
-     - In this step, the NMOS is formed by masking the PMOS region and then ion implanting the donor atoms(Phosphorous) of required dose in the NMOS region.
-     - Similarly, the PMOS region is formed by masking the NMOS region and then ion implanting the acceptor atoms(Boron) of required dose in PMOS region.
-     - Then the substrate is placed in a high temperature furnace so that the doped atoms can diffuse into the silicon.
-     - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/4a3b9aaf-94fc-4ef1-bf9b-3eb14d9c1835)
+**3. N-Well and P-Well Formation :**
 
+   - In this step, the NMOS is formed by masking the PMOS region and then ion implanting the donor atoms(Phosphorous) of required dose in the NMOS region.
+   - Similarly, the PMOS region is formed by masking the NMOS region and then ion implanting the acceptor atoms(Boron) of required dose in PMOS region.
+   - Then the substrate is placed in a high temperature furnace so that the doped atoms can diffuse into the silicon.
+   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/4a3b9aaf-94fc-4ef1-bf9b-3eb14d9c1835)
+
+**4. Formation of Gate:**
+
+   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/a18af614-0d83-463f-9799-6e427ff2da10)
+
+**5. LDD Formation(Lightly Doped Drain) :**
+
+   - This step is done to address the problem of *Hot electron* and *Short Channel Effects*.
+   - Hot electron problem occurs when a large electric field due to large supply voltage is induced across a small channel MOSFET.
+   - Short Channel effects occur when in MOSFETs having channel length lower than 1um. Due to which the channel length is comparable to the depletion regions present on drain-substrate interface. So, the drain voltage tries to influence the current in channel region.
+   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/df94f36c-9c70-4506-bca5-835ae0708833)
+
+**6. Source and Drain Formation:**
+
+   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/8ee11e00-50b2-4ed4-a32e-04d051a2e842)
+
+ **7. 
 
     
