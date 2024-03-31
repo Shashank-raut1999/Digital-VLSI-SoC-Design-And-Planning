@@ -215,7 +215,10 @@
      - In the above layout we have a couple of independent layouts, most of them with a DRC error flagged in white hash colour.
      - Each layout is named with a name and that name calls out the rule number in the Google-Skywater documentation at the following link.
      - ``` https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html ```
-     - 
+     - <img src="https://github.com/Shashank-raut1999/SoC/assets/165283786/5038fa41-c7a0-4b6f-9960-3430055e4598" width="70%">
+
+     
+
 
   
               
