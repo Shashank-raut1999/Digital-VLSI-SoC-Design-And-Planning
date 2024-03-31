@@ -121,7 +121,7 @@
               - Press "I" to invoke the "Insert" mode for editing.
               - make the required changes.
               - Press __Esc__ and then type  ``` :wq ``` to save and exit.
-              - <img src="https://github.com/Shashank-raut1999/SoC/assets/165283786/c1a936d8-ee30-4d80-b5b0-5a9330567be5">
+              - <img src="https://github.com/Shashank-raut1999/SoC/assets/165283786/ffd6600b-fe15-4523-be58-d767e87b5fa7">
 
 
 
@@ -134,6 +134,8 @@
 
            - We will then execute the command
                    ```     plot y vs time a  ```
+
+         -  
 
              
 
