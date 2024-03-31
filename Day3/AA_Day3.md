@@ -40,7 +40,7 @@
    - We cloned the inverter in __openlane__ directory by using the command :
 
      
-             ```  git clone https://github.com/nickson-jose/vsdstdcelldesign.git  ```
+     -   ```  git clone https://github.com/nickson-jose/vsdstdcelldesign.git  ```
      
    -  We copied the __sky130A.tech__ file from */home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech*  into the cloned *vsdstdcell* directory.
 
