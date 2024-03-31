@@ -121,7 +121,8 @@
               - Press "I" to invoke the "Insert" mode for editing.
               - make the required changes.
               - Press __Esc__ and then type  ``` :wq ``` to save and exit.
-              - <img src="https://github.com/Shashank-raut1999/SoC/assets/165283786/4e80f81c-9337-4ee1-bfa2-1d5853d40fd7">
+              - <img src="https://github.com/Shashank-raut1999/SoC/assets/165283786/c1a936d8-ee30-4d80-b5b0-5a9330567be5">
+
 
 
          - Then we will run the command
