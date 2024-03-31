@@ -251,7 +251,7 @@
    -  ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/700f06dd-2d72-4dbc-86bd-500cd345bccf)
    -   We are now able to see the drc warnings(white regions) in the misplaced polyresistance regions.
 
-## How to implement poly resistor spacing to diff and tap?
+## How to correctly implement poly resistor spacing to diff and tap?
 
  - To do this, we need to again make the changes in the **sky130A.tech** file using similar steps we did earlier.
  - Following changes are to be made:
@@ -263,6 +263,14 @@
  - We can make the copy of the poly.9 model of poly.mag file in the magic window itself and check for errors:
  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/b7a0b161-b4e2-4e16-9819-b385c0192aef)
  - We can select the area having drc error and then run the ``` drc why ``` command in the *tkcon* terminal to find the description of that error.
+
+
+## How to find an error in the *nwell.mag* file in the *drc_tests* directory?
+ - Let us open the **nwell.mag** file in the magic tool and look for the **nwell.6** model error.
+ - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/c121f441-e31e-4420-ac5c-6d77f949dc14)
+
+ - Follow the similar steps as done earlier and open the __sky130A.tech__ file in editor as done earlier.
+ - The changes we need to make are as follows:
  - 
 
 
