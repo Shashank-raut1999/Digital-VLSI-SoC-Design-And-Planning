@@ -31,6 +31,21 @@
     - The connections for other elements are given in the order :
         - __elementname__ - __uppernode__ - __lowernode__ - __value__
 
-    - Some examples of spice simulation commands are shown in the above image. 
+    - Some examples of spice simulation commands are shown in the above image.
+
+# Cloning Git Repo for Standard cell of Inverter :
+
+
+       -  ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/b7e12c2a-01b6-46ab-846c-9137bec58b61)
+       - We cloned the inverter in __openlane__ directory by using the command :
+              ```  git clone https://github.com/nickson-jose/vsdstdcelldesign.git  ```
+       -  We copied the __sky130A.tech__ file from */home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech*  into the cloned *vsdstdcell* directory.
+
+       - We then execute the following command to see the inverter in *magic* . 
+           - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/f3b98ffe-9ae2-4a81-b93a-e93833d8241e)
+           -  ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/f6203232-97e1-4026-9eaa-d7b44291015a)
+         
+
+
 
     
