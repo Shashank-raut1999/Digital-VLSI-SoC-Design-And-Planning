@@ -121,13 +121,13 @@
               - Press "I" to invoke the "Insert" mode for editing.
               - make the required changes.
               - Press __Esc__ and then type  ``` :wq ``` to save and exit.
-              - <img src="https://github.com/Shashank-raut1999/SoC/assets/165283786/394e46f7-668d-4fd2-add2-7f6ef5dcc38e">
-              - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/2f5a0bac-c472-4c91-868e-b6660ae4cd7d)
+              - <img src="https://github.com/Shashank-raut1999/SoC/assets/165283786/2f5a0bac-c472-4c91-868e-b6660ae4cd7d">
 
          - Then we will run the command
                     ```  ngspice sky130_inv.spice ```
            to invoke the ngspice tool.
            - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/bc422fe1-fae0-4bea-92df-9da87ea1decb)
+           - 
 
 
 
