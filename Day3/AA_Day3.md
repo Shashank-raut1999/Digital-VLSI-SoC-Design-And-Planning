@@ -178,6 +178,8 @@
   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/1ab851ec-5e59-4a58-a08e-7e2df1864edd)
 
 
+### We have successfully characterized our inverter.
+  - Our next objective is to create a __lef file__ using the layout and we will plugin this lef file in the __picorv32a__ core.
               
 
 
