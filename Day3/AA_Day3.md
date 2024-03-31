@@ -122,6 +122,8 @@
               - make the required changes.
               - Press __Esc__ and then type  ``` :wq ``` to save and exit.
               - <img src="https://github.com/Shashank-raut1999/SoC/assets/165283786/4e8413e6-2f8d-447a-bd6d-03c3d313cbae">
+              - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/6adb0bcf-c464-4abc-87aa-dca0f14551ec)
+
               
 
 
