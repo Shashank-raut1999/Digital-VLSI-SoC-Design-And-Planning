@@ -219,7 +219,7 @@
      - ``` https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html ```
      - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/9a67ecb6-c026-460b-a58e-04a514a214cc)
      - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/b466352b-9e31-4c59-a39e-6662cd0f50f8)
-     - We can make a rectangle by mouse clicks and the hovering the mouse pointer over the *metal3 contact* icon and pressing the ```p``` button.
+     - We can make a rectangle by mouse clicks and then hovering the mouse pointer over the *metal3 contact* icon and pressing the ```p``` button.
      - Then we can execute the command ``` cif see VIA2 ``` in the *tkcon* terminal.
      - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/1fc28ab8-4c47-424f-94ec-87b6dd7c9a05)
      - The squares in the above layout don't actually exist in the layout but they actually represent is a mask layer for **via2** when we will generate GDS from layout.
@@ -228,7 +228,21 @@
        
  
 ## How to find an error in the *poly.mag* file in the *drc_tests* directory?
-   - First we will open the **poly.mag** file in the magic tool either by File/open option in the magic window itself or by typing the 
+   - First we will open the **poly.mag** file in the magic tool either by File/open option in the magic window itself or by typing the command ``` load poly.mag``` in the *tkcon* terminal.
+   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/063affd5-493f-4251-b009-9c31c061635c)
+
+   -  Let us consider the rule **poly.9**.
+   -  ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/c9c2eddd-776e-423a-b2e1-ac64da63ed18)
+
+   -  Then we will check the website for that rule i.e. __poly.9__:
+   -  ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/8554e9ea-fdc6-4745-b742-7674d8e47c0d)
+   -  In the layout in the poly.9 file, the spacing between the **npolyres** and **poly** is only 0.21 microns but it should have been 0.48 microns according to the website. But still there is no error shown in the magic tool.
+
+   -  So now, we need to open the sky130A.tech in vim editor and update it to show the DRC error in the tool.
+   -  
+
+
+ 
 
      
 
