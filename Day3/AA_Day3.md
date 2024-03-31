@@ -180,6 +180,15 @@
 
 ### We have successfully characterized our inverter.
   - Our next objective is to create a __lef file__ using the layout and we will plugin this lef file in the __picorv32a__ core.
+
+
+# Finding Errors in DRC by Magic tool : 
+   - For help related to Magic DRC we can go to the website:
+           -  http://opencircuitdesign.com/magic/Technologyfiles/TheMagicTechnologyFileManual/DrcSection
+   - Link to Google_Skywaters Design Rules:
+           - https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html
+   - For reference , we can use the github repo of Google-Skywater:
+           -  
               
 
 
