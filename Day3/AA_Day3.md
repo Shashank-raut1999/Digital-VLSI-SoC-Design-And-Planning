@@ -121,7 +121,6 @@
               - Press "I" to invoke the "Insert" mode for editing.
               - make the required changes.
               - Press __Esc__ and then type  ``` :wq ``` to save and exit.
-              - <img src="https://github.com/Shashank-raut1999/SoC/assets/165283786/2f5a0bac-c472-4c91-868e-b6660ae4cd7d">
               - <img src="https://github.com/Shashank-raut1999/SoC/assets/165283786/4e80f81c-9337-4ee1-bfa2-1d5853d40fd7">
 
 
@@ -129,6 +128,12 @@
                     ```  ngspice sky130_inv.spice ```
            to invoke the ngspice tool.
            - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/bc422fe1-fae0-4bea-92df-9da87ea1decb)
+           - We will get the following view:
+              - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/d42091f3-f04e-4847-81c0-5bea26a4fa88)
+
+           - We will then execute the command
+                   ```     plot y vs time a  ```
+
              
 
 
