@@ -206,8 +206,16 @@
    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/fbef7633-258b-46f1-9a33-ac460639299c)
    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/2bcccf49-5880-4a16-a29c-f6084a95e5f3)
 
-   - 
+   - Content of .magicrc file:
+        - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/d879bc80-88d5-4e20-a072-4c67af922585)
 
+
+   - Just for example we open the **Met3.mag** file in the magic tool.
+     - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/3e7a9dec-51be-49fa-aa45-9d8f71effaad)
+     - In the above layout we have a couple of independent layouts, most of them with a DRC error flagged in white hash colour.
+     - Each layout is named with a name and that name calls out the rule number in the Google-Skywater documentation at the following link.
+     - ``` https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html ```
+     - 
 
   
               
