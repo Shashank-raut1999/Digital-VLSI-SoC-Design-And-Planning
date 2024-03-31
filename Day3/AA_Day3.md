@@ -163,8 +163,20 @@
 
 ## Rise Cell Delay = Time taken by output to rise to 50% of its final value - Time taken by input to fall to 50% of its final value
   - 50% of 3.3V = 1.65V
+  - Time taken by output to rise to 50% of its final value is 2.2121ns
+  - Time taken by input to fall to 50% of its final value is 2.1516ns
+  - Rise Cell Delay = 2.2121ns - 2.1516ns = 0.0605ns = **60.5ps**
   - Screenshot at 50% values of input and output
-  - 
+  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/38a1476b-9225-4f18-a770-0bff4448b3d0)
+
+## Fall Cell Delay = Time taken by output to fall to 50% of its final value - Time taken by input to rise to 50% of its final value  
+  - 50% of 3.3V = 1.65V
+  - Time taken by output to fall to 50% of its final value is 4.077ns
+  - Time taken by input to rise to 50% of its final value is 4.050ns
+  - Fall Cell Delay =  4.077 - 4.050  = ns = **27ps**
+  - Screenshot at 50% values of input and output :
+  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/1ab851ec-5e59-4a58-a08e-7e2df1864edd)
+
 
               
 
