@@ -182,6 +182,7 @@
   - Our next objective is to create a __lef file__ using the layout and we will plugin this lef file in the __picorv32a__ core.
 
 
+
 # Finding Errors in DRC by Magic tool : 
    - For help related to Magic DRC we can go to the website:
            -  http://opencircuitdesign.com/magic/Technologyfiles/TheMagicTechnologyFileManual/DrcSection
@@ -190,7 +191,8 @@
    - For reference , we can use the github repo of Google-Skywater:
            -  https://github.com/google/skywater-pdk
 
-## Follow the steps:
+
+  ## Follow the steps:
    - First go to the home directory.
    - To download the lab files for performing DRC corrections:
    - ``` wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz ```
@@ -225,7 +227,8 @@
      - We can press __Shift+Z__ to zoom out and __Ctrl+Z__ to zoom in.
        
  
-
+## How to find an error in the *poly.mag* file in the *drc_tests* directory?
+   - First we will open the **poly.mag** file in the magic tool either by File/open option in the magic window itself or by typing the 
 
      
 
