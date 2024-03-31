@@ -111,7 +111,7 @@
         - we are now able to see these files in the *vsdstdcelldesign* directory.
         - <img src="https://github.com/Shashank-raut1999/SoC/assets/165283786/ab58d687-2325-4143-b751-c31b62acb97f" width="70%">
 
-     - We can use **vim** editor in linux to view the content of spice fie by running the following comand in the terminal:
+     - We can use **vim** editor in linux to view the content of spice file by running the following command in the terminal:
          -  ``` vim sky130_inv.spice ```
          - <img src="https://github.com/Shashank-raut1999/SoC/assets/165283786/7aff29ef-547f-4e83-b95c-34a81fcf4948" width="70%" height="80%">
  
