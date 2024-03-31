@@ -216,6 +216,13 @@
      - Each layout is named with a name and that name calls out the rule number in the Google-Skywater documentation at the following link.
      - ``` https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html ```
      - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/9a67ecb6-c026-460b-a58e-04a514a214cc)
+     - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/b466352b-9e31-4c59-a39e-6662cd0f50f8)
+     - We can make a rectangle by mouse clicks and the hovering the mouse pointer over the *metal3 contact* icon and pressing the ```p``` button.
+     - Then we can execute the command ``` cif see VIA2 ``` in the *tkcon* terminal.
+     - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/1fc28ab8-4c47-424f-94ec-87b6dd7c9a05)
+     - 
+ 
+
 
      
 
