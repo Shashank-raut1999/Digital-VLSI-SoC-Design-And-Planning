@@ -84,6 +84,14 @@
 
    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/8ee11e00-50b2-4ed4-a32e-04d051a2e842)
 
- **7. 
+ **7. Formation of Contacts and Local Interconnects:**
+
+   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/34e2df4f-b920-4e67-ba40-5c22f4e4878c)
+
+ **8. Higher Layer Metal Formation:** 
+
+   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/9090e1fe-eec5-438c-b28a-a893bd9a975c)
+
+
 
     
