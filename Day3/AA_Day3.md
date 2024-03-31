@@ -135,10 +135,10 @@
            - We will then execute the command
                    ```     plot y vs time a  ```
 
-         -  The input and output transient waveforms are will be plotted as follows:
+         -  The input and output transient waveforms will be plotted as follows:
                      - <img src="https://github.com/Shashank-raut1999/SoC/assets/165283786/8a150de3-0ed6-4be2-a249-be8d7b84329f" width="70%">
 
-
+   
 
 
 
