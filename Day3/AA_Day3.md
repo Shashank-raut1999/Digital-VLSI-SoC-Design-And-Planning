@@ -47,6 +47,8 @@
    - We then execute the following command to see the inverter in *magic* . 
        - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/f3b98ffe-9ae2-4a81-b93a-e93833d8241e)
        -  ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/f6203232-97e1-4026-9eaa-d7b44291015a)
+       -  
+  <img src="https://github.com/Shashank-raut1999/SoC/assets/165283786/f6203232-97e1-4026-9eaa-d7b44291015a" width=60%>
          
 # CMOS Fabrication Process:
 
