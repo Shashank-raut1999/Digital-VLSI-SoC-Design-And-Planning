@@ -250,9 +250,15 @@
    -  Then we will executre the commands shown in the *tkcon* terminal in below image.
    -  ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/700f06dd-2d72-4dbc-86bd-500cd345bccf)
    -   We are now able to see the drc warnings(white regions) in the misplaced polyresistance regions.
-   -   
 
-   -   
+## How to implement poly resistor spacing to diff and tap?
+
+ - To do this, we need to again make the changes in the **sky130A.tech** file using similar steps we did earlier.
+ - Following changes are to be made:
+ - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/13a20057-a46b-4115-9baa-139047b74185)
+
+ - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/370f2d5f-cbd6-43bb-8872-a863332eaedf)
+ - 
 
 
 
