@@ -269,11 +269,25 @@
  - Let us open the **nwell.mag** file in the magic tool and look for the **nwell.6** model error.
  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/c121f441-e31e-4420-ac5c-6d77f949dc14)
  - In above figure , the deep nwell is shown in the yellow stripes and the nwell is shown in dotted green pattern.
+ - We can check this error on the site as:
+ - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/9a42a604-2ae9-4a5a-8c3b-8fdda801562a)
+
  - The rule says that the edge of the deep nwell needs to be covered with the overlap all the way around by a ring of regular nwell.
 
  - Follow the similar steps as done earlier and open the __sky130A.tech__ file in editor as done earlier.
- - The changes we need to make are as follows:
- - 
+ - The changes we need to make in __sky130A.tech__ file are as follows:
+ - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/022df9f7-0351-44b6-8bb4-0647ec4b90b0)
+
+ - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/074af68f-e990-49db-ba6e-3898851fb4e5)
+
+ - Click on *Save* and exit.
+ - Then again open the magic tool and open the **nwell.mag** file in it.
+ - Then execute the commands shown in **tkcon** window in a sequence as shown in the following image:
+ - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/0f5b1830-4a1c-49cc-84f5-9e193dd04002)
+ - We can observe that now the magic is able to recognize the error and display it.
+ 
+
+
 
 
 
