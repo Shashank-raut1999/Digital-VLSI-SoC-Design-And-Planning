@@ -268,6 +268,8 @@
 ## How to find an error in the *nwell.mag* file in the *drc_tests* directory?
  - Let us open the **nwell.mag** file in the magic tool and look for the **nwell.6** model error.
  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/c121f441-e31e-4420-ac5c-6d77f949dc14)
+ - In above figure , the deep nwell is shown in the yellow stripes and the nwell is shown in dotted green pattern.
+ - The rule says that the edge of the deep nwell needs to be covered with the overlap all the way around by a ring of regular nwell.
 
  - Follow the similar steps as done earlier and open the __sky130A.tech__ file in editor as done earlier.
  - The changes we need to make are as follows:
