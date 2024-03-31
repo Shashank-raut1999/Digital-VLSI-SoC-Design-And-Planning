@@ -38,7 +38,10 @@
 
    -  ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/b7e12c2a-01b6-46ab-846c-9137bec58b61)
    - We cloned the inverter in __openlane__ directory by using the command :
-          -     ```  git clone https://github.com/nickson-jose/vsdstdcelldesign.git  ```
+
+     
+             ```  git clone https://github.com/nickson-jose/vsdstdcelldesign.git  ```
+     
    -  We copied the __sky130A.tech__ file from */home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech*  into the cloned *vsdstdcell* directory.
 
    - We then execute the following command to see the inverter in *magic* . 
