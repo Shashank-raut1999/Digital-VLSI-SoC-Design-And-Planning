@@ -113,7 +113,18 @@
 
      - We can use **vim** editor in linux to view the content of spice file by running the following command in the terminal:
          -  ``` vim sky130_inv.spice ```
-         - <img src="https://github.com/Shashank-raut1999/SoC/assets/165283786/7aff29ef-547f-4e83-b95c-34a81fcf4948" width="50%" height="50%">
+         - <img src="https://github.com/Shashank-raut1999/SoC/assets/165283786/7aff29ef-547f-4e83-b95c-34a81fcf4948" width="70%" height="70%">
+         - The __.option scale__ specifies the dimensions of the grid box in layout.
+         - We will edit this file to  make the required changes and set values of voltage sources and include the *transient* analysis commands.
+         - To edit this file in vim editor :
+              - Open this file in vim editor in terminal.
+              - Press "I" to invoke the "Insert" mode for editing.
+              - make the required changes.
+              - Press __Esc__ and then type  ``` :wq ``` to save and exit.
+              - <img src="https://github.com/Shashank-raut1999/SoC/assets/165283786/4e8413e6-2f8d-447a-bd6d-03c3d313cbae" width="80%" height="80%">
+              
+
+
  
 
 
