@@ -103,9 +103,14 @@
      - <img src="https://github.com/Shashank-raut1999/SoC/assets/165283786/a4164186-d7d1-46ef-a9fd-9fd3d5953075" width="70%">
      - This will create an **sky130_inv.ext** file in the *vsdstdcelldesign* directory.
      - Then we will use this **sky130_inv.ext** file to create a SPICE file to be used in *ngspice* tool by executing the following command in the *tkcon* window of magic tool:
-           -  ``` ext2spice cthresh 0 rthresh 0
-                  ext2spice
-              ```
-           - *ctresh 0 rthresh 0* in above command will extract all the parasitic capacitaces also.
-       
+     -   ``` ext2spice cthresh 0 rthresh 0 ```                       <br>
+     -   ```  ext2spice ```
+                                             
+     - *ctresh 0 rthresh 0* in above command will extract all the parasitic capacitaces also.
+        - <img src="https://github.com/Shashank-raut1999/SoC/assets/165283786/80aa7926-2b4a-45b7-8e5c-7033dbace60c" width="70%">
+        - we are now able to see these files in the *vsdstdcelldesign* directory.
+        - <img src="https://github.com/Shashank-raut1999/SoC/assets/165283786/ab58d687-2325-4143-b751-c31b62acb97f" width="70%">
+
+
+
     
