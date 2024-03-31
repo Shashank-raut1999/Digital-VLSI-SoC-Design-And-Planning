@@ -51,13 +51,16 @@
 # CMOS Fabrication Process:
 
 1. Selection of substrate :
-          - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/42116f08-9f7b-44bf-bf33-9ce78ff8d8fc)
+   
+   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/42116f08-9f7b-44bf-bf33-9ce78ff8d8fc)
 
-2. Active Region Formation:
-         - This step is done to ensure isolation when both the NMOS and PMOS will be made in the same substrate.
-         - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/eb7f612e-1017-4bd7-bde2-6c4ec53621d3)
+3. Active Region Formation:
 
-3. N-Well and P-Well Formation :
+   
+   - This step is done to ensure isolation when both the NMOS and PMOS will be made in the same substrate.
+   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/eb7f612e-1017-4bd7-bde2-6c4ec53621d3)
+
+4. N-Well and P-Well Formation :
      - In this step, the NMOS is formed by masking the PMOS region and then ion implanting the donor atoms(Phosphorous) of required dose in the NMOS region.
      - Similarly, the PMOS region is formed by masking the NMOS region and then ion implanting the acceptor atoms(Boron) of required dose in PMOS region.
      - Then the substrate is placed in a high temperature furnace so that the doped atoms can diffuse into the silicon.
