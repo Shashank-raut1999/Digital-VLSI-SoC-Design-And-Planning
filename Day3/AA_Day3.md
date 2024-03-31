@@ -188,7 +188,23 @@
    - Link to Google_Skywaters Design Rules:
            - https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html
    - For reference , we can use the github repo of Google-Skywater:
-           -  
+           -  https://github.com/google/skywater-pdk
+
+## Follow the steps:
+   - First go to the home directory.
+   - To download the lab files for performing DRC corrections:
+   - ``` wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz ```
+ 
+   - To extract the lab files from the downloaded file:
+   - tar xfz drc_tests.tgz
+ 
+   - Then go inside the lab folder **drc_tests**.
+   - Then we can list all the directories by using the ``` ls -al ``` command.
+   - Then we will view the .magicrc file by using the ``` gvim .magicrc ``` command.
+   - Then we will open the magic tool by using ``` magic -d XR & ``` command.
+
+
+  
               
 
 
