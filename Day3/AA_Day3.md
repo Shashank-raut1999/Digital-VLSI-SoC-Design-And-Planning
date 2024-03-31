@@ -113,7 +113,7 @@
 
      - We can use **vim** editor in linux to view the content of spice file by running the following command in the terminal:
          -  ``` vim sky130_inv.spice ```
-         - <img src="https://github.com/Shashank-raut1999/SoC/assets/165283786/7aff29ef-547f-4e83-b95c-34a81fcf4948" width="70%" height="80%">
+         - <img src="https://github.com/Shashank-raut1999/SoC/assets/165283786/7aff29ef-547f-4e83-b95c-34a81fcf4948" width="50%" height="50%">
  
 
 
