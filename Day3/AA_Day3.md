@@ -47,9 +47,7 @@
    - We then execute the following command to see the inverter in *magic* . 
        - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/f3b98ffe-9ae2-4a81-b93a-e93833d8241e)
        -  ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/f6203232-97e1-4026-9eaa-d7b44291015a)
-       -  
-  <img src="https://github.com/Shashank-raut1999/SoC/assets/165283786/f6203232-97e1-4026-9eaa-d7b44291015a" width=60%>
-         
+                   
 # CMOS Fabrication Process:
 
 **1. Selection of substrate :**
@@ -96,4 +94,18 @@
 
 
 
+## SPICE Extraction :
+
+ - To know the logical functions of the inverter, we will first extract the spice and then we will do the simulatiions in ngspice.
+ - **Extracting SPICE**:
+     - we will execute the following command in the *tkcon* window of magic tool :
+           - ``` extract all ```
+     - <img src="https://github.com/Shashank-raut1999/SoC/assets/165283786/a4164186-d7d1-46ef-a9fd-9fd3d5953075" width="70%">
+     - This will create an **sky130_inv.ext** file in the *vsdstdcelldesign* directory.
+     - Then we will use this **sky130_inv.ext** file to create a SPICE file to be used in *ngspice* tool by executing the following command in the *tkcon* window of magic tool:
+           -  ``` ext2spice cthresh 0 rthresh 0
+                  ext2spice
+              ```
+           - *ctresh 0 rthresh 0* in above command will extract all the parasitic capacitaces also.
+       
     
