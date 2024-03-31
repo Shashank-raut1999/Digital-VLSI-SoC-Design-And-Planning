@@ -238,8 +238,22 @@
    -  ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/8554e9ea-fdc6-4745-b742-7674d8e47c0d)
    -  In the layout in the poly.9 file, the spacing between the **npolyres** and **poly** is only 0.21 microns but it should have been 0.48 microns according to the website. But still there is no error shown in the magic tool.
 
-   -  So now, we need to open the sky130A.tech in vim editor and update it to show the DRC error in the tool.
-   -  
+   -  So now, we need to update the sky130A.tech to show the DRC error in the tool.
+   -  So we will open the file **sky130A.tech** file which is present in the **drc_tests** directory with the text editor of linux itself.
+   -  ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/2d8672fe-479d-4a74-be73-449372c9b0e4)
+   -  We will search for **poly.9** in this file by using the __Find__ option.
+   -  We find it in 2 places . First one in the **POLY** section and the second one in the __uhrpoly__(__polyresistor__) section. The rules are not set properly in both these places.
+   -  So we will add a change in both of these sections.
+   -  ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/cf482f7d-65b4-4d81-a035-0899da6d33b9)
+   -  ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/5d1aea80-b68d-4989-b811-d6037f517f62)
+
+   -  Then we will executre the commands shown in the *tkcon* terminal in below image.
+   -  ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/700f06dd-2d72-4dbc-86bd-500cd345bccf)
+   -   We are now able to see the drc warnings(white regions) in the misplaced polyresistance regions.
+   -   
+
+   -   
+
 
 
  
