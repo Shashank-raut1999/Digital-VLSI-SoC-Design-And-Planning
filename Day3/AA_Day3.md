@@ -246,8 +246,8 @@
    -  So we will add a change in both of these sections.
    -  ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/cf482f7d-65b4-4d81-a035-0899da6d33b9)
    -  ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/5d1aea80-b68d-4989-b811-d6037f517f62)
-
-   -  Then we will executre the commands shown in the *tkcon* terminal in below image.
+   - Click on *Save* and close the editor file.
+   -  Then we will execute the commands shown in the *tkcon* terminal in below image.
    -  ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/700f06dd-2d72-4dbc-86bd-500cd345bccf)
    -   We are now able to see the drc warnings(white regions) in the misplaced polyresistance regions.
 
@@ -256,8 +256,13 @@
  - To do this, we need to again make the changes in the **sky130A.tech** file using similar steps we did earlier.
  - Following changes are to be made:
  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/13a20057-a46b-4115-9baa-139047b74185)
+ - Click on *Save* and close the editor file.
+ - Then execute the following commands in the *tkcon* terminal:
+ - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/06ab815b-292e-490f-886c-8ef9cbba9523)
 
- - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/370f2d5f-cbd6-43bb-8872-a863332eaedf)
+ - We can make the copy of the poly.9 model of poly.mag file in the magic window itself and check for errors:
+ - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/b7a0b161-b4e2-4e16-9819-b385c0192aef)
+ - We can select the area having drc error and then run the ``` drc why ``` command in the *tkcon* terminal to find the description of that error.
  - 
 
 
