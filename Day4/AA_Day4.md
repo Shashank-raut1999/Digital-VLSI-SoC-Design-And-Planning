@@ -81,16 +81,9 @@
 
 ## We need to modify the **config.tcl** file of **picorv32a** directory :
 
- - So open the **config.tcl** file of **picorv32a** directory in **vim** editor and add the following commands :
- -   ```
-                     set ::env(LIB_SYNTH) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"  
-                     set ::env(LIB_FASTEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__fast.lib"
-                     set ::env(LIB_SLOWEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__slow.lib"
-                     set ::env(LIB_TYPICAL) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"
-        
-                     set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/src/*.lef]
-      ```
- - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/022a6dbb-3c27-4af6-a7dc-77043128b9c1)
+ - So open the **config.tcl** file of **picorv32a** directory in any editor and add the commands shown in below image :
+ -  ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/231d7b3c-31eb-4d54-8bcb-35fdb5b9d9c6)
+
  - save and exit.
 
    
@@ -103,9 +96,14 @@
          ./flow.tcl -interactive
          package require openlane 0.9
          prep -design picorv32a
-         set lefs [glob $::env(DESIGN_DIR)/src/*.lef]      # to add new lef files
+         set lefs [glob $::env(DESIGN_DIR)/src/*.lef]      
          add_lefs -src $lefs
      ```
+
+- ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/0f483256-b624-49c6-9de8-840efa4e945c)
+
+- ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/670e12a3-9ffd-4d64-a244-65d5c91e624c)
+- 
 
 
 
