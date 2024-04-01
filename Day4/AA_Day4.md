@@ -98,12 +98,15 @@
          prep -design picorv32a
          set lefs [glob $::env(DESIGN_DIR)/src/*.lef]      
          add_lefs -src $lefs
+         run_synthesis
      ```
 
 - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/0f483256-b624-49c6-9de8-840efa4e945c)
 
 - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/670e12a3-9ffd-4d64-a244-65d5c91e624c)
-- 
+
+- ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/d131974c-a3d9-4b7d-91ef-5b91a87d810e)
+
 
 
 
