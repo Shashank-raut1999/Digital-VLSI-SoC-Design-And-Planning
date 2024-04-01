@@ -66,8 +66,11 @@
 
   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/2b8adb7a-70dd-4ebc-956b-a8f9e6714083)
 
-  - 
+  - Content of **lef file** :
+      - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/90ce2e51-997a-4cd8-b50d-c95511369ecd)
 
+  - Now this lef file is ready to be plugged in the **picorv32a** design.
+  - Before that, we will move this file to a **src** folder so that all the required files are there in same location.
 
 
 
