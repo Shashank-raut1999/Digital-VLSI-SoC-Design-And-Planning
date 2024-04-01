@@ -141,7 +141,34 @@
 
  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/61cff799-5a01-4191-8db0-044c88e7d709)
 
- - 
+
+
+### Since synthesis of the picorv32a using our custom designed cell is successful, so we can run the floorplan :
+  - ``` run_floorplan```
+  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/27a52c4e-31b0-411d-9e51-9655ebbb38ae)
+
+  - Since, we are getting the error so first again do the synthesis using above commands and then we will use following commands to do the floorplan:
+  -  ```
+       init_floorplan
+       place_io
+       tap_decap_or
+     ```
+
+  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/ce36d9b5-9e8c-4609-b57c-5950008a2d75)
+
+  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/4c9feb30-50fc-4720-9ada-cf0cde610d99)
+
+  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/aab50eaf-de2c-473e-9342-431e23af7d92)
+
+
+### Since floorplan of the picorv32a using our custom designed cell is successful, so we can run the placement :
+
+  - ``` run_placement```
+  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/fe8f79bb-0959-4949-b0dc-a06ffeaf5560)
+  - placement is successful.
+
+
+
 
 
 
