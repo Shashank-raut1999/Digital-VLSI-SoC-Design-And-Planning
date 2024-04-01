@@ -35,10 +35,13 @@
    - Having the ports at the intersection of the horizontal and vertical tracks ensure that  route can reach there from Y as well as X direction.
   
  - We can verify the __Guideline 2__ as :
-          - The width of the standard cell must be in the odd multiple of the track pitch and height must be in the even multiples of the vertical pitch.
-          -  Width of std cell = 3 * 0.46um = 1.38um
-          - Height of std cell = 8 * 0.34um = 2.72um
-          - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/0774d433-a8a7-4dc6-bf15-28e4b1d958c3)
+    - The width of the standard cell must be in the odd multiple of the track pitch and height must be in the even multiples of the vertical pitch.
+      
+    -  Width of std cell = 3 * 0.46um = 1.38um
+
+    - Height of std cell = 8 * 0.34um = 2.72um
+  
+    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/0774d433-a8a7-4dc6-bf15-28e4b1d958c3)
            
 
 
