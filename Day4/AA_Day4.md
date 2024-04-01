@@ -70,7 +70,30 @@
       - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/90ce2e51-997a-4cd8-b50d-c95511369ecd)
 
   - Now this lef file is ready to be plugged in the **picorv32a** design.
-  - Before that, we will move this file to a **src** folder so that all the required files are there in same location.
+  - Before that, we will copy this file and the library files to a **src** folder of __picorv32a__ directory so that all the required files are there in same location.
+    
+  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/d0e4631d-c301-4ac9-992d-0706654a92b2)
+
+  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/5e79029b-16db-45af-9fbb-164faf0e8871)
+
+  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/2c362711-0cb8-4b9f-941a-837c6864e666)
+
+
+## We need to modify the **config.tcl** file of **picorv32a** directory :
+
+ - So open the **config.tcl** file of **picorv32a** directory in **vim** editor and add the following commands :
+ -      ```          set ::env(LIB_SYNTH) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"  
+                     set ::env(LIB_FASTEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__fast.lib"
+                     set ::env(LIB_SLOWEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__slow.lib"
+                     set ::env(LIB_TYPICAL) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"
+        
+                     set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/src/*.lef]
+      ```
+ - 
+   
+
+
+
 
 
 
