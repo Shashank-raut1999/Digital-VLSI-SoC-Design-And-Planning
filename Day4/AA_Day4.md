@@ -116,6 +116,10 @@
 
  - We will give the following commmands in the terminal where openlane is open
  -   ```
+       prep -design picorv32a -tag 01 -overwrite
+       set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+       add_lefs -src $lefs
+
        echo $::env(SYNTH_STRATEGY)
        set ::env(SYNTH_STRATEGY) "DELAY 3"
        echo $::env(SYNTH_BUFFERING)
@@ -125,7 +129,22 @@
        run_synthesis
      ```
 
- - The commands starting with the word **echo** are used to view the current values of the parameter whereas the commands starting with __set__ are used to set the parameter values. 
+ - ``` prep -design picorv32a -tag 01 -overwrite``` is used to overwrite the existing files with previous values of simulations.
+ - The commands starting with the word **echo** are used to view the current values of the parameter whereas the commands starting with __set__ are used to set the parameter values.
+
+   
+ - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/d3cbf2dc-6c80-4113-b3a1-695711ca964b)
+
+ - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/4b7478cf-e4fa-432d-a7e6-5a92cc2f708b)
+
+ - In below image, we can observe that the **chip area** has increased and the value of **slack has reduced : 
+
+ - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/61cff799-5a01-4191-8db0-044c88e7d709)
+
+ - 
+
+
+
 
 
 
