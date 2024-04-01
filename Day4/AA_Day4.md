@@ -25,9 +25,11 @@
   - We will see the following window:
   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/fedc862c-9f70-483c-8f5c-2ce499a3749b)
   - We need to make the *Grid* visible to verify the layout:
-        - so execute the command ``` help grid ``` shown in below image in the **tkcon** window to know the syntax.
-        - then we execute the command ``` grid 0.46um 0.34um```.
-        - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/ebdb9520-a0ea-4ef4-980c-b50ea15c9cff)
+    - so execute the command ``` help grid ``` shown in below image in the **tkcon** window to know the syntax.
+    - then we execute the command ``` grid 0.46um 0.34um```.
+   
+      
+    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/ebdb9520-a0ea-4ef4-980c-b50ea15c9cff)
 
   - 
 
