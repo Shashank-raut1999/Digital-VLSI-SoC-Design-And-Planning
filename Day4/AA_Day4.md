@@ -167,6 +167,24 @@
   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/fe8f79bb-0959-4949-b0dc-a06ffeaf5560)
   - placement is successful.
 
+### Then execute the following command to open the magic :
+
+  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/298d4eb9-e4a3-4753-9af0-445fea68eec3)
+
+  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/b7e9cd69-5785-4f69-aaad-8c9da633da36)
+
+  - We are able to observe our custom cell on the layout as follows :
+
+  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/a807be16-43f3-4fa3-9b25-24e2461d4404)
+
+  - We can run the ```expand``` command in the *tkcon* window :
+
+  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/7270a6d6-2e4f-4f17-88d6-436b1b8ef05d)
+
+  - The overlapping of our cell with other cells show that there is power rail sharing between them.
+
+
+
 
 
 
