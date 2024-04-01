@@ -183,6 +183,8 @@
 
   - The overlapping of our cell with other cells show that there is power rail sharing between them.
 
+  - **Our custom cell was successfully integrated into the picorv32a design.** 
+
 
 
 
