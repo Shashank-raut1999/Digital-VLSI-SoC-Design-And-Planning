@@ -108,6 +108,14 @@
 - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/d131974c-a3d9-4b7d-91ef-5b91a87d810e)
 
 
+### We will try to modify the parameters of our cell by referring the *README.md* file in the *configuration* folder in *openlane* directory :
+
+ - The README.md file contains info as :
+
+ - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/2c9bf0e5-79f8-4bca-9e61-334ad23c4743)
+
+ - 
+
 
 
 
