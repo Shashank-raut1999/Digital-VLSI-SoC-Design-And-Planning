@@ -82,14 +82,16 @@
 ## We need to modify the **config.tcl** file of **picorv32a** directory :
 
  - So open the **config.tcl** file of **picorv32a** directory in **vim** editor and add the following commands :
- -   ```          set ::env(LIB_SYNTH) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"  
+ -   ```
+                     set ::env(LIB_SYNTH) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"  
                      set ::env(LIB_FASTEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__fast.lib"
                      set ::env(LIB_SLOWEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__slow.lib"
                      set ::env(LIB_TYPICAL) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"
         
                      set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/src/*.lef]
       ```
- - 
+ - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/022a6dbb-3c27-4af6-a7dc-77043128b9c1)
+
    
 
 
