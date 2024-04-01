@@ -1,8 +1,33 @@
 # Day 4 :  Pre-layout timing analysis and importance of good clock tree
 
-## Our task is to find the errors in the layout and then fix them so that this layout can be plugged in the *picorv32a* process flow :
+## Our task is to find the errors in the layout of *vsdstdcelldesign* and then fix them so that this layout can be plugged in the *picorv32a* process flow :
 - While doing placement, we need the layout inforamtion which is present in **lef** file. So we need to get this lef file first.
 ## Guidelines to be followed while making a standard cell :
 1. The input and the output ports must lie on the intersection of the vertical and the horizontal tracks.
 2. The width of the standard cell must be in the odd multiple of the track pitch and height must be in the odd multiples of the vertical pitch.
+
+
+### What is a track file?
+- It is a file which contanins the info about the tracks and metal layers which will be used during the routing.
+- To view the **track file** :
+       - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/18557fb2-80e6-4c3c-8e92-116193540dfb)
+       - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/0c03bf25-c51e-4629-8a2f-64f501bd1d6c)
+
+
+- In above image : For example, an **li1** layer the horizontal track(X) is at an offset of 0.23 and has a pitch of 0.46.
+- Similarly, for **li1** vertical track(Y) is at an offset of  0.17 and has a pitch of 0.34.
+
+
+
+ ## Now, to open the vsdstdcelldesign layout :
+  - Execute :
+  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/c2a54ba5-2f09-42d9-bc41-915c19bad687)
+  - We will see the following window:
+  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/fedc862c-9f70-483c-8f5c-2ce499a3749b)
+  - We need to make the *Grid* visible to verify the layout:
+        - so execute the command ``` help grid ``` shown in below image in the **tkcon** window to know the syntax.
+        - then we execute the command ``` grid 0.46um 0.34um```.
+        - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/ebdb9520-a0ea-4ef4-980c-b50ea15c9cff)
+
+  - 
 
