@@ -91,9 +91,21 @@
                      set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/src/*.lef]
       ```
  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/022a6dbb-3c27-4af6-a7dc-77043128b9c1)
+ - save and exit.
 
    
+## OPENLANE :
 
+- Go to the open lane directory and execute the ``` docker ``` command.
+- Execute the following commands :
+
+-    ```
+         ./flow.tcl -interactive
+         package require openlane 0.9
+         prep -design picorv32a
+         set lefs [glob $::env(DESIGN_DIR)/src/*.lef]      # to add new lef files
+         add_lefs -src $lefs
+     ```
 
 
 
