@@ -110,11 +110,22 @@
 
 ### We will try to modify the parameters of our cell by referring the *README.md* file in the *configuration* folder in *openlane* directory :
 
- - The README.md file contains info as :
+ - The README.md file contains information about the parameters of the cell. We will refer the variable names and the parameter values from **synthesis** section of this file to modify the parameters of the cell :
 
  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/2c9bf0e5-79f8-4bca-9e61-334ad23c4743)
 
- - 
+ - We will give the following commmands in the terminal where openlane is open
+ -   ```
+       echo $::env(SYNTH_STRATEGY)
+       set ::env(SYNTH_STRATEGY) "DELAY 3"
+       echo $::env(SYNTH_BUFFERING)
+       echo $::env(SYNTH_SIZING)
+       set ::env(SYNTH_SIZING) 1
+       echo $::env(SYNTH_DRIVING_CELL)
+       run_synthesis
+     ```
+
+ - The commands starting with the word **echo** are used to view the current values of the parameter whereas the commands starting with __set__ are used to set the parameter values. 
 
 
 
