@@ -42,6 +42,34 @@
     - Height of std cell = 8 * 0.34um = 2.72um
   
     - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/0774d433-a8a7-4dc6-bf15-28e4b1d958c3)
+  
+    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/908f24cf-50c3-4dd8-9496-abbf46ac3306)
+
            
+ ## Info related to the ports is given in the website given below :
+-   ``` https://github.com/nickson-jose/vsdstdcelldesign  ```
+ 
 
 
+
+
+ ## *lef* file extraction :
+  - The __lef__ is now ready to be extracted so we will execute the following instructions to give a name of our choice to this layout.
+
+    
+  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/b47f5876-8c37-430f-9275-5543be4e65d8)
+
+  - The above shown instruction saves our layout by the name **sky130_vsdinv.mag** in the **vsdstdcelldesign** directory.
+  - Now open this newly created  **sky130_vsdinv.mag** in *magic* and execute the ``` lef write ``` command in the *tkcon* window to make a lef file in the **vsdstdcelldesign**  directory .
+
+  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/7936ee23-daa1-4a8f-afc1-9a4fe5f87541)
+
+  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/2b8adb7a-70dd-4ebc-956b-a8f9e6714083)
+
+  - 
+
+
+
+
+
+ 
