@@ -429,6 +429,18 @@
   
    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/02e6d1f0-3651-4768-89df-c57a7c2ef211)
 
+   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/364c522c-ff49-40a8-ae43-a3a49ff06ad5)
+  
+   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/a8cdfab7-1677-43fa-b150-54a2d0348c6a)
+  
+   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/2bc8779f-2090-4546-bf1b-b605ee86695f)
+  
+   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/3733a480-715b-4962-bc18-bb816cb79605)
+
+
+
+
+
 
        
 
