@@ -315,7 +315,66 @@
    
     - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/adf05464-32cc-4dab-a0c0-8a20ed78284b)
    
+    - The slack got reduced to 23.1405 ns.
+   
+
+    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/d6f65073-4a37-401d-ab5c-d2472f779d6c)
+   
+    - In above case , an OR gate with a drive strength of 2 driving an Open Drain (OA) has more delay. So we will replace this OR gate with another OR gate having a drive strength of 4 by executing following commands:
+   
+    - ```
+           # Reports all the connections to a net
+       report_net -connections _11643_
+
+       # Replacing cell
+       replace_cell _14481_ sky130_fd_sc_hd__or4_4
+
+       # Generating custom timing report
+       report_checks -fields {net cap slew input_pins} -digits 4
+      ```
+
+    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/337dd4d5-b2b2-438d-b04b-81c2e988527b)
+   
+    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/9b538eb3-8b7d-4068-9024-12c5123e4f18)
+   
+    - The slack is reduced to 23.1362 ns.
+   
+    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/28a8d1ae-2163-4acf-b3fa-8f1ae4b7ecb3)
+   
+    - In above case also, an OR gate with a drive strength of 2 driving an Open Drain (OA) has more delay. So we will replace this OR gate with another OR gate having a drive strength of 4 by executing following commands:
+   
+    - ```
+         # Reports all the connections to a net
+       report_net -connections _11668_
+
+       # Replacing cell
+       replace_cell _14506_ sky130_fd_sc_hd__or4_4
+
+       # Generating custom timing report
+       report_checks -fields {net cap slew input_pins} -digits 4
+      ```
+
+    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/bcccb2eb-3f1e-4460-9a9f-b45644f3490e)
+   
+    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/e4434a4d-9782-4c4d-8837-f0dd6fdefedb)
+   
+    - The slack is reduced to 22.6173 ns.
+   
+    - Now, we need to verify whether the net **_14506_** is replaced with **sky130_fd_sc_hd__or4_4** or not.
+    - So we will execute the following command:
+    -   ``` report_checks -from _29043_ -to _30440_ -through _14506_ ```
+   
+    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/1fe6a98c-14d6-4e7f-bd4c-a2ab43ca9d3d)
+   
     - 
+
+ 
+
+
+
+
+
+
 
 
 
