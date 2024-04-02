@@ -186,6 +186,27 @@
   - **Our custom cell was successfully integrated into the picorv32a design.** 
 
 
+# Now we will do the Timing Analysis with OpenSTA tool after synthesis :
+
+ - We will do STA on the initial picorv32a design which had timing violations.
+
+ - First we need to run the synthesis using the following commands in openlane directory:
+
+ - ```
+       docker
+       ./flow.tcl -interactive
+       package require openlane 0.9
+       prep -design picorv32a
+       set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+       add_lefs -src $lefs
+       set ::env(SYNTH_SIZING) 1
+       run_synthesis
+   ```
+
+   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/4fb311a5-be7c-4ecd-856e-638fbc92cf75)
+  
+   - Now we need to create a ``` pre_sta.conf ``` file in **openlane** directory for doing STA.
+   - 
 
 
 
