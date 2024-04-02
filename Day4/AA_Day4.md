@@ -207,7 +207,8 @@
   
    - Now we need to make a new ``` pre_sta.conf ``` file containing the commands shown in below image in **openlane** directory for doing STA. We can do this by vim editor.
   
-   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/433e9d53-9e4c-40fc-bcb7-bb1ffae2610d)
+   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/6aa2116b-f378-4e76-ad33-f84e741179d7)
+
    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/deadb2ff-5c7f-461c-b603-0e30240d4e9f)
 
   
@@ -220,7 +221,22 @@
    
    ## To invoke the OpenSTA tool :
 
-     - Go to the openlane directory in a new terminal and execute the ``` sta pre_sta.conf ``` command. 
+     - Go to the openlane directory in a new terminal and execute the ``` sta pre_sta.conf ``` command.
+  
+     - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/c6371f98-0cd3-444f-ac6c-67cf755cb065)
+  
+     - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/69c0b627-d9ea-48cf-a52c-3928c7a74aeb)
+  
+     - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/cd8dde00-7cbc-4287-b6e0-4dd57ac93bdb)
+  
+     - In above image, we can see that the delay is more due to more Fanout.
+  
+     - So, now we will try to change the FANOUT parameter in the synthesis :
+  
+     - 
+
+
+
 
 
 
