@@ -539,6 +539,35 @@
   exit
   ```
 
+ - Then again for Checking current value of **CTS_CLK_BUFFER_LIST** use the command:
+ - ``` echo $::env(CTS_CLK_BUFFER_LIST) ```
+ - Then for inserting **sky130_fd_sc_hd__clkbuf_1** to the first index of list use the command:
+ - ``` set ::env(CTS_CLK_BUFFER_LIST) [linsert $::env(CTS_CLK_BUFFER_LIST) 0 sky130_fd_sc_hd__clkbuf_1] ```
+ - Then for verifying whether the **sky130_fd_sc_hd__clkbuf_1** was inserted to the first index of list or not, we will use:
+ - ```echo $::env(CTS_CLK_BUFFER_LIST)```
+
+ - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/c4a81eb5-25d9-46bf-bfb9-0b4e95cdbcf3)
+
+ - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/4a0c5871-7d26-4d23-80c0-8517f7f9fd51)
+
+ - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/535705a3-b9cb-48ef-9553-0b5ade1987f2)
+
+ - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/cd4d3d0e-6859-480b-aff0-2189ad54cf0b)
+
+ - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/46e6b7b7-b145-4eb6-af58-8fc98f2834f6)
+
+ - 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
