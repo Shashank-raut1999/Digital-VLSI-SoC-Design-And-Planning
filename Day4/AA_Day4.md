@@ -210,7 +210,11 @@
    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/6aa2116b-f378-4e76-ad33-f84e741179d7)
 
    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/deadb2ff-5c7f-461c-b603-0e30240d4e9f)
+  
 
+
+
+   - We need to remember that when we are outside __openlane__ , we cannot use the definitions of *environmental* variables which were used during synthesis. So, we will create a **my_base.sdc** file which will contain the definitions of environment variables.
   
    - Now, we also need to create ``` my_base.sdc ``` file containing the content shown in below image in ``` openlane/designs/picorv32a/src ``` directory :
   
@@ -231,9 +235,42 @@
   
      - In above image, we can see that the delay is more due to more Fanout.
   
-     - So, now we will try to change the FANOUT parameter in the synthesis :
+     - So, now we will try to change the FANOUT parameter and again do the synthesis by executing the following commands:
   
-     - 
+     - ```
+       prep -design picorv32a -tag 02-04_05-27 -overwrite
+       set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+       add_lefs -src $lefs
+       set ::env(SYNTH_SIZING) 1
+       set ::env(SYNTH_MAX_FANOUT) 4
+       echo $::env(SYNTH_DRIVING_CELL)
+       run_synthesis
+       
+       ```
+
+     -  ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/b8478589-8ad1-4289-a391-98a163ee175c)
+  
+     -  ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/f7b1e1ae-eaaa-4bc9-a287-af0ec39fe6e2)
+
+ 
+
+  
+  
+      - Now, run the ``` sta pre_sta.conf ``` command in a new terminal in openlane directory :
+
+      - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/f1a416ce-0451-4397-85c4-1a496a678770)
+  
+      - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/f8b079d4-c7c2-4335-b042-61b8b5fb305c)
+  
+      - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/2df5633a-e176-4bc9-bbaf-de29cf7127d1)
+  
+      - 
+
+
+
+
+
+ 
 
 
 
