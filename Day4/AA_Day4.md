@@ -400,6 +400,12 @@
   
    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/6592cbd2-5cb7-47fe-8179-7c9a21adea09)
    - Hence, verified.
+  
+
+
+   ### Do synthesis , floorplan , placement and cts using following commands:
+
+     - We 
 
 
 
