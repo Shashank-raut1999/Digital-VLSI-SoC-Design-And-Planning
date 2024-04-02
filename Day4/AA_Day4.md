@@ -503,6 +503,57 @@
 
 
 
+# Assigned Task : To remove sky130_fd_sc_hd__clkbuf_1 from clock buffer list CTS_CLK_BUFFER_LIST :
+
+- For checking the current value of buffer list use the command:
+- ``` echo $::env(CTS_CLK_BUFFER_LIST) ```
+- For removing **sky130_fd_sc_hd__clkbuf_1** from the list use the command:
+- ``` set ::env(CTS_CLK_BUFFER_LIST) [lreplace $::env(CTS_CLK_BUFFER_LIST) 0 0] ```
+- For checking current value of **CTS_CLK_BUFFER_LIST** use the command:
+- ``` echo $::env(CTS_CLK_BUFFER_LIST) ```
+- For checking current value of **CURRENT_DEF** use the command:
+- ``` echo $::env(CURRENT_DEF) ```
+- For setting def as placement def use the command:
+- ``` set ::env(CURRENT_DEF) /openLANE_flow/designs/picorv32a/runs/02-04_05-27/results/placement/picorv32a.placement.def ```
+
+- Then we will run cts using:
+- ``` run_cts ```
+- For checking current value of **CTS_CLK_BUFFER_LIST** use the command:
+- ``` echo $::env(CTS_CLK_BUFFER_LIST) ```
+
+- Now we will follow the similar commands we used earlier to run **OPENROAD** :
+- ```
+  openroad
+  read_lef /openLANE_flow/designs/picorv32a/runs/02-04_05-27/tmp/merged.lef
+  read_def /openLANE_flow/designs/picorv32a/runs/02-04_05-27/results/cts/picorv32a.cts.def
+  write_db pico_cts1.db
+  read_db pico_cts.db
+  read_verilog /openLANE_flow/designs/picorv32a/runs/02-04_05-27/results/synthesis/picorv32a.synthesis_cts.v
+  read_liberty $::env(LIB_SYNTH_COMPLETE)
+  link_design picorv32a
+  read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
+  set_propagated_clock [all_clocks]
+  report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4
+  report_clock_skew -hold
+  report_clock_skew -setup
+  exit
+  ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  
