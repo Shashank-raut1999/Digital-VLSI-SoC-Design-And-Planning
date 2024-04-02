@@ -403,9 +403,30 @@
   
 
 
-   ### Do synthesis , floorplan , placement and cts using following commands:
+   ### Do synthesis , floorplan , placement and cts :
 
-     - We 
+     - We will proceed with the earlier strategy which had no violations.
+     - Execute the following commands:
+     - ```
+              prep -design picorv32a -tag 24-03_10-03 -overwrite
+              set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+              add_lefs -src $lefs
+              set ::env(SYNTH_STRATEGY) "DELAY 3"
+              set ::env(SYNTH_SIZING) 1
+              run_synthesis
+              init_floorplan
+              place_io
+              tap_decap_or
+              run_placement
+
+              # Incase getting error
+              unset ::env(LIB_CTS)
+
+              run_cts
+       ```
+
+   - 
+       
 
 
 
