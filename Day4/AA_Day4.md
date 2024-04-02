@@ -208,9 +208,13 @@
    - Now we need to make a new ``` pre_sta.conf ``` file containing the commands shown in below image in **openlane** directory for doing STA. We can do this by vim editor.
   
    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/433e9d53-9e4c-40fc-bcb7-bb1ffae2610d)
+   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/deadb2ff-5c7f-461c-b603-0e30240d4e9f)
+
   
    - Now, we also need to create ``` my_base.sdc ``` file containing the content shown in below image in ``` openlane/designs/picorv32a/src ``` directory :
-   - 
+  
+   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/30918e24-b86a-42eb-bad1-189ab4cd3d20)
+
 
 
 
