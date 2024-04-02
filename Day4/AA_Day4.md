@@ -378,7 +378,7 @@
  - So we can make the copy by writing the following code.
  - ```
        # First go to the following location
-       cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/25-03_18-52/results/synthesis/
+       cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-04_05-27/results/synthesis/
 
        # Listing contents of the directory
         ls -ltr
@@ -406,9 +406,9 @@
    ### Do synthesis , floorplan , placement and cts :
 
      - We will proceed with the earlier strategy which had no violations.
-     - Execute the following commands:
+     - Go to the **openlane** directoer and execute the following commands:
      - ```
-              prep -design picorv32a -tag 24-03_10-03 -overwrite
+              prep -design picorv32a -tag 02-04_05-27 -overwrite
               set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
               add_lefs -src $lefs
               set ::env(SYNTH_STRATEGY) "DELAY 3"
