@@ -425,7 +425,11 @@
               run_cts
        ```
 
-   - 
+   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/e7063531-eb7d-4169-8d76-a88bf0e59176)
+  
+   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/02e6d1f0-3651-4768-89df-c57a7c2ef211)
+
+
        
 
 
