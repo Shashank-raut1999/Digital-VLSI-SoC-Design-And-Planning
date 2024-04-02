@@ -116,7 +116,7 @@
 
  - We will give the following commmands in the terminal where openlane is open
  -   ```
-       prep -design picorv32a -tag 01 -overwrite
+       prep -design picorv32a -tag  -overwrite
        set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
        add_lefs -src $lefs
 
@@ -129,7 +129,7 @@
        run_synthesis
      ```
 
- - ``` prep -design picorv32a -tag 01 -overwrite``` is used to overwrite the existing files with previous values of simulations.
+ - ``` prep -design picorv32a -tag  -overwrite``` is used to overwrite the existing files with previous values of simulations.
  - The commands starting with the word **echo** are used to view the current values of the parameter whereas the commands starting with __set__ are used to set the parameter values.
 
    
@@ -137,7 +137,7 @@
 
  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/4b7478cf-e4fa-432d-a7e6-5a92cc2f708b)
 
- - In below image, we can observe that the **chip area** has increased and the value of **slack has reduced : 
+ - In below image, we can observe that the **chip area** has increased and the value of **slack** has reduced : 
 
  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/61cff799-5a01-4191-8db0-044c88e7d709)
 
@@ -323,10 +323,10 @@
     - In above case , an OR gate with a drive strength of 2 driving an Open Drain (OA) has more delay. So we will replace this OR gate with another OR gate having a drive strength of 4 by executing following commands:
    
     - ```
-           # Reports all the connections to a net
+       # For reporting all the connections to a net
        report_net -connections _11643_
 
-       # Replacing cell
+       # For replacing cell
        replace_cell _14481_ sky130_fd_sc_hd__or4_4
 
        # Generating custom timing report
@@ -344,10 +344,10 @@
     - In above case also, an OR gate with a drive strength of 2 driving an Open Drain (OA) has more delay. So we will replace this OR gate with another OR gate having a drive strength of 4 by executing following commands:
    
     - ```
-         # Reports all the connections to a net
+       # For reporting all the connections to a net
        report_net -connections _11668_
 
-       # Replacing cell
+       # For replacing cell
        replace_cell _14506_ sky130_fd_sc_hd__or4_4
 
        # Generating custom timing report
@@ -369,11 +369,42 @@
 
 
    
-
-
 ## Now we will replace the old netlist with this newly generated netlist which was generated after reducing slack. And then we will run *floorplan* , *placement* and *CTS* .
 
- - 
+ - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/9b89f8f6-294f-4697-aaf4-ef41b1172a27)
+
+ - The image shown above contains the __netlist__ before making the modifications.
+ - So, we will make a copy of this old netlist and then we will add the newly generated netlist to be used in our openlane flow.
+ - So we can make the copy by writing the following code.
+ - ```
+       # First go to the following location
+       cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/25-03_18-52/results/synthesis/
+
+       # Listing contents of the directory
+        ls -ltr
+
+       # For copying the netlist with particular name 
+        cp picorv32a.synthesis.v picorv32a.synthesis_old.v
+
+       # Listing contents of the directory
+         ls -ltr
+    ```
+
+   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/ec2212d7-498d-4e02-89a5-145fc0cd9a51)
+  
+   - Now we can proceed to put the newly generated netlist.
+   - So for that, we need to run the ``` write_verilog ``` command in the terminal where we did STA.
+   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/c6d00f88-a5cc-4af2-95fa-dbe4dbed04aa)
+  
+   - Now, to verify whether the newly generated netlist is correct or not, we will check whether the changes we made earlier(replacing OR gates etc) are reflected in this new file or not.
+  
+   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/6592cbd2-5cb7-47fe-8179-7c9a21adea09)
+   - Hence, verified.
+
+
+
+     
+
 
  
 
