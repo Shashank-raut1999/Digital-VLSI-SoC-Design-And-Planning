@@ -116,7 +116,7 @@
 
  - We will give the following commmands in the terminal where openlane is open
  -   ```
-       prep -design picorv32a -tag  -overwrite
+       prep -design picorv32a -tag 01-04_12-54 -overwrite
        set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
        add_lefs -src $lefs
 
@@ -129,7 +129,7 @@
        run_synthesis
      ```
 
- - ``` prep -design picorv32a -tag  -overwrite``` is used to overwrite the existing files with previous values of simulations.
+ - ``` prep -design picorv32a -tag 01-04_12-54 -overwrite``` is used to overwrite the existing files with previous values of simulations.
  - The commands starting with the word **echo** are used to view the current values of the parameter whereas the commands starting with __set__ are used to set the parameter values.
 
    
