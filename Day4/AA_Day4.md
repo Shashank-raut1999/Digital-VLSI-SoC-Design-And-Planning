@@ -234,6 +234,7 @@
      - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/cd8dde00-7cbc-4287-b6e0-4dd57ac93bdb)
   
      - In above image, we can see that the delay is more due to more Fanout.
+     - We can check by executing the command ``` report_net -connections _pin no_ ```.
   
      - So, now we will try to change the FANOUT parameter and again do the synthesis by executing the following commands:
   
@@ -264,7 +265,66 @@
   
       - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/2df5633a-e176-4bc9-bbaf-de29cf7127d1)
   
-      - 
+
+## Doing some fixes :
+
+  - Since OR gate which has a drive strength of 2 is driving 4 fanout.
+
+  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/98acba7c-893b-4444-bb75-61708c980e12)
+
+  - So we will replace this **OR Gate** with another **OR Gate** having *Drive strength* of 4 by executing the following commands.
+
+  - ```
+      # Reports all the connections to a net
+       report_net -connections _11672_
+
+       # Checking command syntax
+       help replace_cell
+
+       # Replacing cell
+       replace_cell _14510_ sky130_fd_sc_hd__or3_4
+
+       # Generating custom timing report
+       report_checks -fields {net cap slew input_pins} -digits 4
+
+     ```
+
+    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/f739e988-0755-4181-b768-b493c0778e9a)
+   
+    - slack gets reduced compared to earlier slack:
+   
+    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/e515dba8-79e2-46e3-808f-e68e6e24ead9)
+   
+    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/bcfdf132-a109-4999-8a8e-5393889ee8d8)
+   
+    - In above case also OR gate which has a drive strength of 2 is driving 4 fanout.
+    - So we will replace this **OR Gate** with another **OR Gate** having *Drive strength* of 4 by executing the following commands.
+   
+    - ```
+      # Reports all the connections to a net
+       report_net -connections _11675_
+
+       # Replacing cell
+       replace_cell _14514_ sky130_fd_sc_hd__or3_4
+
+       # Generating custom timing report
+       report_checks -fields {net cap slew input_pins} -digits 4
+      ```
+
+    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/456bf4bc-c167-48ea-9fd1-0a47fa48bb44)
+   
+    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/adf05464-32cc-4dab-a0c0-8a20ed78284b)
+   
+    - 
+
+
+
+      
+
+
+
+
+      
 
 
 
