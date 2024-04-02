@@ -366,7 +366,11 @@
    
     - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/1fe6a98c-14d6-4e7f-bd4c-a2ab43ca9d3d)
    
-    - 
+
+
+## Now we will replace the old netlist with this newly generated netlist after reducing slack. And then we will run *floorplan* , *placement* and *CTS* .
+
+ - 
 
  
 
