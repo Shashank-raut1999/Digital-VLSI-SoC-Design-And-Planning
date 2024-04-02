@@ -368,7 +368,10 @@
    
 
 
-## Now we will replace the old netlist with this newly generated netlist after reducing slack. And then we will run *floorplan* , *placement* and *CTS* .
+   
+
+
+## Now we will replace the old netlist with this newly generated netlist which was generated after reducing slack. And then we will run *floorplan* , *placement* and *CTS* .
 
  - 
 
