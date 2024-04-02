@@ -186,7 +186,7 @@
   - **Our custom cell was successfully integrated into the picorv32a design.** 
 
 
-# Now we will do the Timing Analysis with OpenSTA tool after synthesis :
+# Timing Analysis with OpenSTA tool after synthesis :
 
  - We will do STA on the initial picorv32a design which had timing violations.
 
@@ -214,6 +214,13 @@
    - Now, we also need to create ``` my_base.sdc ``` file containing the content shown in below image in ``` openlane/designs/picorv32a/src ``` directory :
   
    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/30918e24-b86a-42eb-bad1-189ab4cd3d20)
+  
+   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/1cfec651-3c72-42b8-9213-76ea7b434d84)
+  
+   
+   ## To invoke the OpenSTA tool :
+
+     - Go to the openlane directory in a new terminal and execute the ``` sta pre_sta.conf ``` command. 
 
 
 
