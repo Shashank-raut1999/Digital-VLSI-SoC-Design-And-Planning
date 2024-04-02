@@ -436,6 +436,71 @@
    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/2bc8779f-2090-4546-bf1b-b605ee86695f)
   
    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/3733a480-715b-4962-bc18-bb816cb79605)
+  
+   - Now a **.cts** file is created in the location shown below:
+  
+   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/2929d85d-28c6-4317-b59f-6c4d9e6e1cd9)
+  
+   - This **cts** file consists of the content of the previous **picorv32a.synthesis.v** with newly added buffers.
+
+
+## OPENROAD :
+ - OPENROAD is readily integrated in the OPENLANE so there is no need of defining the environmental variables explicitly.
+ - ```
+   # Command to run OpenROAD tool
+   openroad
+   ```
+ - In OPENROAD, timing analysis requires the creation og **db**(database) using __lef__ and __tmp__ file.
+ - __db__ creation is a one time process. Once we have created it, we can use it anytime when we want to do analysis.
+ - __db__ creation in commands :
+ - ```
+   # Reading lef file
+   read_lef /openLANE_flow/designs/picorv32a/runs/02-04_05-27/tmp/merged.lef
+
+   # Reading def file
+   read_def /openLANE_flow/designs/picorv32a/runs/02-04_05-27/results/cts/picorv32a.cts.def
+
+   # Creating an OpenROAD database file named pico_cts.db
+   write_db pico_cts.db
+
+   ```
+ - This database file is present in **openlane** directory.
+
+ - Then we can execute the following commands:
+ - ```
+   # For loading the created db file in Openroad
+   read_db pico_cts.db
+
+   # For reading netlist post CTS
+   read_verilog /openLANE_flow/designs/picorv32a/runs/02-04_05-27/results/synthesis/picorv32a.synthesis_cts.v
+
+   # For reading the library for design
+   read_liberty $::env(LIB_SYNTH_COMPLETE)
+
+   # For linking design and library
+   link_design picorv32a
+
+   # For reading the custom sdc we created
+   read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
+
+   # For setting all clocks as propagated clocks
+   set_propagated_clock [all_clocks]
+
+   # Generating custom timing report
+   report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4
+
+   # To exit to Openlane flow
+   exit
+
+   ```
+
+ - 
+
+
+ 
+
+
+
 
 
 
