@@ -494,7 +494,16 @@
 
    ```
 
- - 
+ - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/2067321d-dbc1-4d5a-b373-ada143fc8427)
+
+
+ - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/9f5fbd6d-754e-4c5c-9c49-2a16ab5b7422)
+ - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/341b1eb0-d811-4149-829d-dfa86dd7fdd3)
+ - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/eba5b571-0532-438f-ae4e-d098e01d796f)
+
+
+
+
 
 
  
