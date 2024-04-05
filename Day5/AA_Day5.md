@@ -24,6 +24,13 @@
 - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/2f76cb50-3e84-4c89-ad2e-68ecb64e5b1f)
 - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/ef89659e-681a-4d7b-aaca-7e7a41dcf3e6)
 
+- ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/15875958-051e-4b18-a1e0-3e2f591dcdb7)
+- We can observe in the above image that there are no violations our design.
+
+  ## Post-routing SPEF(Standard Parasitic Exchange Format) Extraction:
+   - 
+
+
  
 
 
