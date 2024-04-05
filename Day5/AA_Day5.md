@@ -1,3 +1,5 @@
+# Day 5
+
 #  Power Distribution Network
 
 - General block diagram of PDN:
@@ -23,12 +25,21 @@
 - ``` run_routing ```
 - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/2f76cb50-3e84-4c89-ad2e-68ecb64e5b1f)
 - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/ef89659e-681a-4d7b-aaca-7e7a41dcf3e6)
+- SPEF(Standard Parasitic Exchange Format) Extraction is automatically done at the end of routing process as can be seen in the above image.
+- So a **.spef** file is created :
+- ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/9e2220c7-71fe-4008-98b2-d94dc1745ad7)
+
 
 - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/15875958-051e-4b18-a1e0-3e2f591dcdb7)
 - We can observe in the above image that there are no violations our design.
 
-  ## Post-routing SPEF(Standard Parasitic Exchange Format) Extraction:
-   - 
+## Post-routing STA analysis :
+- For STA analysis,
+  - we need to create a new db(database) file because the **def** has changed.
+  - we will use the **preroute_netlist**
+  - we  need to read the **spef** file which contains all the information related to the parasitic capacitances.
+     
+
 
 
  
