@@ -33,11 +33,44 @@
 - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/15875958-051e-4b18-a1e0-3e2f591dcdb7)
 - We can observe in the above image that there are no violations our design.
 
+- Magic tool view of layout after routing is done:
+- ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/d29f41fc-022c-4ad8-9c35-aaf3c5513d0d)
+- ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/635e1f42-3e34-48cc-8a77-f5251ed18506)
+- ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/6765277d-eaa0-4f40-89de-94d3232c15fa)
+
+
+
+
 ## Post-routing STA analysis :
 - For STA analysis,
   - we need to create a new db(database) file because the **def** has changed.
   - we will use the **preroute_netlist**
   - we  need to read the **spef** file which contains all the information related to the parasitic capacitances.
+ 
+- Execute the commands shown below:
+- ```
+  docker
+  openroad
+  read_lef /openLANE_flow/designs/picorv32a/runs/02-04_05-27/tmp/merged.lef
+  read_def /openLANE_flow/designs/picorv32a/runs/02-04_05-27/results/routing/picorv32a.def
+  write_db myroute.db
+  read_db myroute.db
+  read_verilog /openLANE_flow/designs/picorv32a/runs/02-04_05-27/results/synthesis/picorv32a.synthesis_preroute.v
+  read_liberty $::env(LIB_SYNTH_COMPLETE)
+  link_design picorv32a
+  read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
+  set_propagated_clock [all_clocks]
+  read_spef /openLANE_flow/designs/picorv32a/runs/02-04_05-27/results/routing/picorv32a.spef
+  report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4
+  ```
+
+ -  
+
+  
+
+
+
+   
      
 
 
