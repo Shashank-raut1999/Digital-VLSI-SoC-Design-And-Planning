@@ -47,22 +47,6 @@
   - we will use the **preroute_netlist**
   - we  need to read the **spef** file which contains all the information related to the parasitic capacitances.
  
-- Execute the commands shown below:
-- ```
-  docker
-  openroad
-  read_lef /openLANE_flow/designs/picorv32a/runs/02-04_05-27/tmp/merged.lef
-  read_def /openLANE_flow/designs/picorv32a/runs/02-04_05-27/results/routing/picorv32a.def
-  write_db myroute.db
-  read_db myroute.db
-  read_verilog /openLANE_flow/designs/picorv32a/runs/02-04_05-27/results/synthesis/picorv32a.synthesis_preroute.v
-  read_liberty $::env(LIB_SYNTH_COMPLETE)
-  link_design picorv32a
-  read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
-  set_propagated_clock [all_clocks]
-  read_spef /openLANE_flow/designs/picorv32a/runs/02-04_05-27/results/routing/picorv32a.spef
-  report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4
-  ```
 
  -  
 
