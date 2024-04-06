@@ -15,6 +15,8 @@
  * [Fall Cell Delay](#Fall-Cell-Delay)
  * [Finding DRC Errors by Magic tool](#Finding-Errors-in-DRC-by-Magic-tool)
      + [Finding error in poly.mag file](#Finding-error-in-polymag-file)
+     + [Correctly Implementing poly resistor spacing](#Correctly-Implementing-poly-resistor-spacing)
+     + [Finding an error in nwell.mag file](#Finding-an-error-in-nwellmag-file)
 
 
 ## Can we change the parameters of floorplan?
@@ -274,8 +276,9 @@
    -  ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/700f06dd-2d72-4dbc-86bd-500cd345bccf)
    -   We are now able to see the drc warnings(white regions) in the misplaced polyresistance regions.
 
-## How to correctly implement poly resistor spacing to diff and tap?
+## Correctly Implementing poly resistor spacing 
 
+ - How to correctly implement poly resistor spacing to diff and tap?
  - To do this, we need to again make the changes in the **sky130A.tech** file using similar steps we did earlier.
  - Following changes are to be made:
  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/13a20057-a46b-4115-9baa-139047b74185)
@@ -288,7 +291,8 @@
  - We can select the area having drc error and then run the ``` drc why ``` command in the *tkcon* terminal to find the description of that error.
 
 
-## How to find an error in the *nwell.mag* file in the *drc_tests* directory?
+## Finding an error in nwell.mag file
+ - How to find an error in the *nwell.mag* file in the *drc_tests* directory?
  - Let us open the **nwell.mag** file in the magic tool and look for the **nwell.6** model error.
  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/c121f441-e31e-4420-ac5c-6d77f949dc14)
  - In above figure , the deep nwell is shown in the yellow stripes and the nwell is shown in dotted green pattern.
