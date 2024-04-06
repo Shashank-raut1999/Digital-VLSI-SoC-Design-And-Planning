@@ -129,7 +129,10 @@
        run_synthesis
      ```
 
- - ``` prep -design picorv32a -tag 01-04_12-54 -overwrite``` is used to overwrite the existing files with previous values of simulations.
+ - ```
+   prep -design picorv32a -tag 01-04_12-54 -overwrite
+   ```
+ -  is used to overwrite the existing files with previous values of simulations.
  - The commands starting with the word **echo** are used to view the current values of the parameter whereas the commands starting with __set__ are used to set the parameter values.
 
    
