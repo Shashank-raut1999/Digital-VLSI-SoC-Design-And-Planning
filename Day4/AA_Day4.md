@@ -6,7 +6,7 @@
 
 ## Table of Content
 
-* [Guidelines](#Guidelines-to-be-followed-while-making-a-standard-cell)
+* [Guidelines For Standard Cell](#Guidelines-to-be-followed-while-making-a-standard-cell)
 * [vsdstdcelldesign layout](#Verifying-Layout)
 * [lef File Extraction](#lef-file-extraction)
 * [Running OPENLANE](#OPENLANE)
