@@ -8,6 +8,8 @@
  * [2) Block diagram of a SoC](#2-Block-diagram-of-a-SoC)
  * [3) Structure of a chip](#3-How-does-a-chip-look-like)
  * [4) Process Design Kit](#4-What-is-a-PDK)
+ * [5) RTL to GDSll Flow](#5-Simple-RTL-to-GDSll-flow)
+ * [6) Introduction to Openlane](#6-Introduction-to-Openlane)
 
 
 
