@@ -14,7 +14,7 @@
 * [Running OPENLANE](#OPENLANE)
 * [Timing Analysis with OpenSTA](#Timing-Analysis-with-OpenSTA-tool-after-synthesis)
 * [Reducing slack by Fixes](#Reducing-slack-by-Fixes)
-* [Process-flow on Newly Generated Netlist](#Process--flow-on-Newly-Generated-Netlist) 
+* [Process-flow on Newly Generated Netlist](#Process-flow-on-Newly-Generated-Netlist) 
 
 
 
