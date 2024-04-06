@@ -48,7 +48,7 @@
 
 
 # Postrouting STA analysis :
-- For STA analysis,
+  - For STA analysis,
   - we need to create a new db(database) file because the **def** has changed.
   - we will use the **preroute_netlist**
   - we  need to read the **spef** file which contains all the information related to the parasitic capacitances.
