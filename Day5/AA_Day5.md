@@ -48,6 +48,8 @@
 
 
 # Postrouting STA analysis :
+
+
   - For STA analysis,
   - we need to create a new db(database) file because the **def** has changed.
   - we will use the **preroute_netlist**
