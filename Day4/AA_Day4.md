@@ -9,17 +9,21 @@
 * [Guidelines](#Guidelines-to-be-followed-while-making-a-standard-cell)
 * [vsdstdcelldesign layout](#Verifying-Layout)
 * [lef File Extraction](#lef-file-extraction)
+* [Running OPENLANE](#OPENLANE)
+* [Modifying parameters of cell](#Modifying-parameters-of-cell)
+* [Running OPENLANE](#OPENLANE)
+* [Timing Analysis with OpenSTA](#Timing-Analysis-with-OpenSTA)
       
 
 
-## Our task is to find the errors in the layout of *vsdstdcelldesign* and then fix them so that this layout can be plugged in the *picorv32a* process flow :
+#### Our task is to find the errors in the layout of *vsdstdcelldesign* and then fix them so that this layout can be plugged in the *picorv32a* process flow :
 - While doing placement, we need the layout inforamtion which is present in **lef** file. So we need to get this lef file first.
 ## Guidelines to be followed while making a standard cell 
 1. The input and the output ports must lie on the intersection of the vertical and the horizontal tracks.
 2. The width of the standard cell must be in the odd multiple of the track pitch and height must be in the even multiples of the vertical pitch.
 
 
-### What is a track file?
+#### What is a track file?
 - It is a file which contanins the info about the tracks and metal layers which will be used during the routing.
 - To view the **track file** :
        - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/18557fb2-80e6-4c3c-8e92-116193540dfb)
@@ -66,7 +70,7 @@
 
 
 
- ## lef file extraction :
+ ## lef file extraction 
   - The __lef__ is now ready to be extracted so we will execute the following instructions to give a name of our choice to this layout.
 
     
@@ -100,7 +104,7 @@
  - save and exit.
 
    
-## OPENLANE :
+## OPENLANE 
 
 - Go to the open lane directory and execute the ``` docker ``` command.
 - Execute the following commands :
@@ -121,7 +125,9 @@
 - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/d131974c-a3d9-4b7d-91ef-5b91a87d810e)
 
 
-### We will try to modify the parameters of our cell by referring the *README.md* file in the *configuration* folder in *openlane* directory :
+### Modifying parameters of cell
+
+ - We will try to modify the parameters of our cell by referring the *README.md* file in the *configuration* folder in *openlane* directory :
 
  - The README.md file contains information about the parameters of the cell. We will refer the variable names and the parameter values from **synthesis** section of this file to modify the parameters of the cell :
 
@@ -221,7 +227,7 @@
 
    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/4fb311a5-be7c-4ecd-856e-638fbc92cf75)
   
-   - Now we need to make a new ``` pre_sta.conf ``` file containing the commands shown in below image in **openlane** directory for doing STA. We can do this by vim editor.
+   - Now we need to make a new ``` pre_sta.conf  ``` file containing the commands shown in below image in **openlane** directory for doing STA. We can do this by vim editor.
   
    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/6aa2116b-f378-4e76-ad33-f84e741179d7)
 
@@ -572,90 +578,3 @@
 
  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/46e6b7b7-b145-4eb6-af58-8fc98f2834f6)
 
- - 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-       
-
-
-
-     
-
-
- 
-
-
-
-
-
-
-
-
-
-      
-
-
-
-
-      
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
