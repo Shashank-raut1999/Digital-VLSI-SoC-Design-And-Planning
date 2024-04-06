@@ -12,7 +12,7 @@
 * [Running OPENLANE](#OPENLANE)
 * [Modifying parameters of cell](#Modifying-parameters-of-cell)
 * [Running OPENLANE](#OPENLANE)
-* [Timing Analysis with OpenSTA](#Timing-Analysis-with-OpenSTA)
+* [Timing Analysis with OpenSTA](#Timing-Analysis-with-OpenSTA-tool-after-synthesis-:)
       
 
 
@@ -245,7 +245,7 @@
    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/1cfec651-3c72-42b8-9213-76ea7b434d84)
   
    
-   ## To invoke the OpenSTA tool :
+   #### To invoke the OpenSTA tool :
 
      - Go to the openlane directory in a new terminal and execute the ``` sta pre_sta.conf ``` command.
   
