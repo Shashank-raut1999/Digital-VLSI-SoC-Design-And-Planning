@@ -14,7 +14,7 @@
  * [Rise Cell Delay](#Rise-Cell-Delay)
  * [Fall Cell Delay](#Fall-Cell-Delay)
  * [Finding DRC Errors by Magic tool](#Finding-Errors-in-DRC-by-Magic-tool)
-     + [How to find an error in the poly.mag file in the drc_tests directory?](#How-to-find-an-error-in-the-poly-mag-file-in-the-drc-tests-directory)
+     + [Finding error in poly.mag file](#Finding-error-in-poly-mag-file)
 
 
 ## Can we change the parameters of floorplan?
@@ -249,7 +249,8 @@
      - We can press __Shift+Z__ to zoom out and __Ctrl+Z__ to zoom in.
        
  
-## How to find an error in the poly.mag file in the drc_tests directory?
+## Finding error in poly.mag file
+ - How to find an error in the poly.mag file in the drc_tests directory?
    - First we will open the **poly.mag** file in the magic tool either by File/open option in the magic window itself or by typing the command ``` load poly.mag``` in the *tkcon* terminal.
    - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/063affd5-493f-4251-b009-9c31c061635c)
 
