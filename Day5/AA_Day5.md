@@ -1,6 +1,6 @@
 # Day 5
 
-#  Power Distribution Network
+<u> #  Power Distribution Network </u>
 
 - General block diagram of PDN:
 - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/45e9dece-5cc0-4979-99ba-8ac88ba76b08)
