@@ -1,4 +1,4 @@
-# <u> Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK </u>
+#  Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK 
 
 ## 1. Arduino Board
        
@@ -120,13 +120,14 @@ It consists of the main processor , SDRAM chip(memory) , ADC (analog to digital 
 
 
 ## Basic Linux Commands
+```
  - **cd**     : opens the particular folder
  - **ls**     : lists the content of the folder
  - **pwd**    : shows the present working directory
  - **mkdir**  : to make a new directory
  - ***command* --help** : shows the complete use that command
  - **clear**  : clears the terminal screen
-
+```
 ## 7. Openlane Directory Structure: 
   - ![Openlane Directory](<Openlane directory.png>)
   - the 'skywater-pdk' file contains all the pdk files like timing libraries, lef lib, tech lib, cell lib etc. which are needed by foundry to fabricate that chip. These files are made to work with commercial EDA tools and not with opensource EDA tools. 
@@ -139,10 +140,10 @@ It consists of the main processor , SDRAM chip(memory) , ADC (analog to digital 
 
 ## 8. Design Preparation step:
   - ![Opening openLANE](image-5.png)
-  - we need to run the __docker__ command in terminal to invoke openlane.
-  - then we need to run the __./flow.tcl -interactive__ command to do a step by step process. If we don't run the interactive command then the process will  get completed in one step.
+  - we need to run the ```docker``` command in terminal to invoke openlane.
+  - then we need to run the ```./flow.tcl -interactive``` command to do a step by step process. If we don't run the interactive command then the process will  get completed in one step.
   -    we need to import all the packages to proceed further so use the following command:
-     - __package require openlane 0.9__
+     - ```package require openlane 0.9```
       
   - ![design file](image-6.png)
   - __designs__ folder in the openlane folder contains all the designs.
