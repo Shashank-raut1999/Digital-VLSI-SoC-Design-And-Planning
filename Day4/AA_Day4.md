@@ -14,6 +14,9 @@
 * [Running OPENLANE](#OPENLANE)
 * [Timing Analysis with OpenSTA](#Timing-Analysis-with-OpenSTA-tool-after-synthesis)
 * [Reducing slack by Fixes](#Reducing-slack-by-Fixes)
+* [Process-flow on Newly Generated Netlist](#Process--flow-on-Newly-Generated-Netlist) 
+
+
 
 
 #### Our task is to find the errors in the layout of *vsdstdcelldesign* and then fix them so that this layout can be plugged in the *picorv32a* process flow :
@@ -125,7 +128,7 @@
 - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/d131974c-a3d9-4b7d-91ef-5b91a87d810e)
 
 
-### Modifying parameters of cell
+## Modifying parameters of cell
 
  - We will try to modify the parameters of our cell by referring the *README.md* file in the *configuration* folder in *openlane* directory :
 
@@ -165,7 +168,7 @@
 
 
 
-### Since synthesis of the picorv32a using our custom designed cell is successful, so we can run the floorplan :
+#### Since synthesis of the picorv32a using our custom designed cell is successful, so we can run the floorplan :
   - ``` run_floorplan```
   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/27a52c4e-31b0-411d-9e51-9655ebbb38ae)
 
@@ -183,13 +186,13 @@
   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/aab50eaf-de2c-473e-9342-431e23af7d92)
 
 
-### Since floorplan of the picorv32a using our custom designed cell is successful, so we can run the placement :
+#### Since floorplan of the picorv32a using our custom designed cell is successful, so we can run the placement :
 
   - ``` run_placement```
   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/fe8f79bb-0959-4949-b0dc-a06ffeaf5560)
   - placement is successful.
 
-### Then execute the following command to open the magic :
+#### Then execute the following command to open the magic :
 
   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/298d4eb9-e4a3-4753-9af0-445fea68eec3)
 
@@ -288,7 +291,7 @@
       - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/2df5633a-e176-4bc9-bbaf-de29cf7127d1)
   
 
-## Reducing slack by Fixes 
+# Reducing slack by Fixes 
 
   - Since OR gate which has a drive strength of 2 is driving 4 fanout.
 
@@ -391,7 +394,10 @@
 
 
    
-## Now we will replace the old netlist with this newly generated netlist which was generated after reducing slack. And then we will run *floorplan* , *placement* and *CTS* .
+## Process-flow on Newly Generated Netlist 
+
+
+ - Now we will replace the old netlist with this newly generated netlist which was generated after reducing slack. And then we will run *floorplan* , *placement* and *CTS* .
 
  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/9b89f8f6-294f-4697-aaf4-ef41b1172a27)
 
