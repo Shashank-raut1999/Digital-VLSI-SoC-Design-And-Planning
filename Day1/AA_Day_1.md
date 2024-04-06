@@ -10,6 +10,7 @@
  * [4) Process Design Kit](#4-What-is-a-PDK)
  * [5) RTL to GDSll Flow](#5-Simple-RTL-to-GDSll-flow)
  * [6) Introduction to Openlane](#6-Introduction-to-Openlane)
+ * [7) Design Preparation step](#8-Design-Preparation-step)
 
 
 
