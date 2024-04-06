@@ -11,10 +11,11 @@
 * [lef File Extraction](#lef-file-extraction)
 * [Running OPENLANE](#OPENLANE)
 * [Modifying parameters of cell](#Modifying-parameters-of-cell)
-* [Running OPENLANE](#OPENLANE)
 * [Timing Analysis with OpenSTA](#Timing-Analysis-with-OpenSTA-tool-after-synthesis)
 * [Reducing slack by Fixes](#Reducing-slack-by-Fixes)
-* [Process-flow on Newly Generated Netlist](#Process-flow-on-Newly-Generated-Netlist) 
+* [Process-flow on Newly Generated Netlist](#Process-flow-on-Newly-Generated-Netlist)
+* [OPENROAD](#OPENROAD)
+* [Assigned Task](#Assigned-Task)
 
 
 
@@ -472,7 +473,7 @@
    - This **cts** file consists of the content of the previous **picorv32a.synthesis.v** with newly added buffers.
 
 
-## OPENROAD :
+# OPENROAD :
  - OPENROAD is readily integrated in the OPENLANE so there is no need of defining the environmental variables explicitly.
  - ```
    # Command to run OpenROAD tool
@@ -531,7 +532,10 @@
 
 
 
-# Assigned Task : To remove sky130_fd_sc_hd__clkbuf_1 from clock buffer list CTS_CLK_BUFFER_LIST :
+# Assigned Task 
+
+
+- To remove sky130_fd_sc_hd__clkbuf_1 from clock buffer list CTS_CLK_BUFFER_LIST :
 
 - For checking the current value of buffer list use the command:
 - ``` echo $::env(CTS_CLK_BUFFER_LIST) ```
