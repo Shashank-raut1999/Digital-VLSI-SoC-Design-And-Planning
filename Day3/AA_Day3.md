@@ -14,7 +14,7 @@
  * [Rise Cell Delay](#Rise-Cell-Delay)
  * [Fall Cell Delay](#Fall-Cell-Delay)
  * [Finding DRC Errors by Magic tool](#Finding-Errors-in-DRC-by-Magic-tool)
-     + [Finding error in poly.mag file](#Finding-error-in-poly-mag-file)
+     + [Finding error in poly.mag file](#Finding-error-in-polymag-file)
 
 
 ## Can we change the parameters of floorplan?
