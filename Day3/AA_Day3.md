@@ -1,7 +1,23 @@
 # Day 3
 
+# Design library cell using Magic Layout and ngspice characterization
+---
 
-## **Can we change the parameters of floorplan?**
+## Table Of Content:
+ * [Changing parameters of floorplan](#Can-we-change-the-parameters-of-floorplan)
+ * [SPICE Deck](#SPICE-Deck)
+ * [Cloning Git Repo for Standard cell of Inverter](#Cloning-Git-Repo-for-Standard-cell-of-Inverter)
+ * [16-Mask CMOS Fabrication Process](#16-Mask-CMOS-Fabrication-Process)
+ * [SPICE Extraction](#SPICE-Extraction)
+ * [Rise Time](#Rise-Time)
+ * [Fall transition time](#Fall-transition-time)
+ * [Rise Cell Delay](#Rise-Cell-Delay)
+ * [Fall Cell Delay](#Fall-Cell-Delay)
+ * [Finding DRC Errors by Magic tool](#Finding-Errors-in-DRC-by-Magic-tool)
+     + [Task 1](#How-to-find-an-error-in-the-poly-mag-file-in-the-drc_tests-directory)
+
+
+## Can we change the parameters of floorplan?
 ==> YES.
 - Let us try to change the distance between pins in the floorplan process. Since, changing the values is allowed in OPENLANE process flow.
 - We need to copy the parameter name from the config.tcl file in the floorplan folder inside results whose value is to be changed.
@@ -15,6 +31,8 @@
 -  Then again we need to run the invoke the magic tool as done earlier.
    - ![alt text](image-1.png)
    - we observe that the pins are now not equidistant.
+ 
+     
 
 # SPICE Deck:
      
@@ -48,7 +66,7 @@
        - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/f3b98ffe-9ae2-4a81-b93a-e93833d8241e)
        -  ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/f6203232-97e1-4026-9eaa-d7b44291015a)
                    
-# CMOS Fabrication Process:
+# 16-Mask CMOS Fabrication Process:
 
 **1. Selection of substrate :**
    
@@ -96,7 +114,7 @@
 
 ## SPICE Extraction :
 
- - To know the logical functions of the inverter, we will first extract the spice and then we will do the simulatiions in ngspice.
+ - To know the logical functions of the inverter, we will first extract the spice and then we will do the simulations in ngspice.
  - **Extracting SPICE**:
      - we will execute the following command in the *tkcon* window of magic tool :
            - ``` extract all ```
@@ -143,7 +161,8 @@
                    
 
  
-## Rise Time = Time taken by output to rise to 80% of its final value - Time taken by output to rise to 20% of its final value
+## Rise Time
+   -  Rise Time = Time taken by output to rise to 80% of its final value - Time taken by output to rise to 20% of its final value
    -  output rises to 20% of its final value at 2.1825 ns.
    -  output rises to 80% of its final value at 2.2464 ns
    -  **RISE TIME = 2.2464  - 2.1825 = 0.0639 ns = 63.9ps**
@@ -152,7 +171,8 @@
    -   Screenshot at 80% (i.e. 2.64V) :
    -   ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/dd765fb3-8888-4ead-91bf-fef37f933cc8)
 
-## Fall transition time = Time taken by output to fall to 80% of its final value - Time taken by output to fall to 20% of its final value
+## Fall transition time
+ - Fall transition time = Time taken by output to fall to 80% of its final value - Time taken by output to fall to 20% of its final value
  - output rises to 20%(i.e. 2.64V) of its final value at 4.0527 ns
  - output rises to 80%(i.e. 660mV) of its final value at 4.0951 ns
  - **FALL TIME =4.0951 - 4.0527 = 0.0424ns = 42.4ps**
@@ -161,7 +181,8 @@
  - Screenshot at 80% :
  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/1e508261-d0c5-4b3c-8699-c89e946d9dfb)
 
-## Rise Cell Delay = Time taken by output to rise to 50% of its final value - Time taken by input to fall to 50% of its final value
+## Rise Cell Delay
+  - Rise Cell Delay = Time taken by output to rise to 50% of its final value - Time taken by input to fall to 50% of its final value
   - 50% of 3.3V = 1.65V
   - Time taken by output to rise to 50% of its final value is 2.2121ns
   - Time taken by input to fall to 50% of its final value is 2.1516ns
@@ -169,7 +190,8 @@
   - Screenshot at 50% values of input and output
   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/38a1476b-9225-4f18-a770-0bff4448b3d0)
 
-## Fall Cell Delay = Time taken by output to fall to 50% of its final value - Time taken by input to rise to 50% of its final value  
+## Fall Cell Delay
+  - Fall Cell Delay = Time taken by output to fall to 50% of its final value - Time taken by input to rise to 50% of its final value  
   - 50% of 3.3V = 1.65V
   - Time taken by output to fall to 50% of its final value is 4.077ns
   - Time taken by input to rise to 50% of its final value is 4.050ns
@@ -192,7 +214,7 @@
            -  https://github.com/google/skywater-pdk
 
 
-  ## Follow the steps:
+  #### Follow the steps:
    - First go to the home directory.
    - To download the lab files for performing DRC corrections:
    - ``` wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz ```
@@ -285,22 +307,4 @@
  - Then execute the commands shown in **tkcon** window in a sequence as shown in the following image:
  - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/0f5b1830-4a1c-49cc-84f5-9e193dd04002)
  - We can observe that now the magic is able to recognize the error and display it.
- 
-
-
-
-
-
- 
-
      
-
-
-  
-              
-
-
- 
-
-
-    
