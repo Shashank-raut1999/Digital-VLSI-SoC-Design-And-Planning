@@ -3,7 +3,7 @@
 # Table of content :
    * [Power Distribution Network](#Power-Distribution-Network)
    * [Routing](#Routing)
-   * [Post-routing STA analysis](#Post--routing-STA-analysis)
+   * [Post-routing STA analysis](#Postrouting-STA-analysis)
 
 
 #  Power Distribution Network 
@@ -47,7 +47,7 @@
 
 
 
-# Post-routing STA analysis :
+# Postrouting STA analysis :
 - For STA analysis,
   - we need to create a new db(database) file because the **def** has changed.
   - we will use the **preroute_netlist**
