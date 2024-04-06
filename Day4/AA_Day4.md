@@ -13,7 +13,7 @@
 * [Modifying parameters of cell](#Modifying-parameters-of-cell)
 * [Running OPENLANE](#OPENLANE)
 * [Timing Analysis with OpenSTA](#Timing-Analysis-with-OpenSTA-tool-after-synthesis)
-      
+* [Reducing slack by Fixes](#Reducing-slack-by-Fixes)
 
 
 #### Our task is to find the errors in the layout of *vsdstdcelldesign* and then fix them so that this layout can be plugged in the *picorv32a* process flow :
@@ -288,7 +288,7 @@
       - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/2df5633a-e176-4bc9-bbaf-de29cf7127d1)
   
 
-## Doing some fixes :
+## Reducing slack by Fixes 
 
   - Since OR gate which has a drive strength of 2 is driving 4 fanout.
 
