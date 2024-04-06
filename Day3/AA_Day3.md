@@ -34,7 +34,7 @@
  
      
 
-# SPICE Deck:
+# SPICE Deck
      
 
  - ![alt text](image-2.png)
