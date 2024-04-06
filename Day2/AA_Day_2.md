@@ -12,7 +12,7 @@
 * [LAB Work](#6-LAB)
 * [Netlist Binding and Physical Cells](#Netlist-Binding-and-Physical-Cells)
 * [Cell Design Flow](#Cell-Design-Flow)
-    + [Inputs](#1-Inputs)
+    + [Inputs](#i-Inputs)
     + [](#)
     + [](#)
 
