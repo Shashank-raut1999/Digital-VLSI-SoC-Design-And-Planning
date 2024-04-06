@@ -4,6 +4,8 @@
 # Pre-layout timing analysis and importance of good clock tree:
 ---
 * [Guidelines](#Guidelines-to-be-followed-while-making-a-standard-cell)
+* [vsdstdcelldesign layout](#Verifying-Layout)
+* [lef File Extraction](#lef-file-extraction)
       
 
 
@@ -26,7 +28,8 @@
 
 
 
- ## Now, to open the vsdstdcelldesign layout :
+ ## Verifying Layout
+  - Now, to open the vsdstdcelldesign layout :
   - Execute :
   - ![image](https://github.com/Shashank-raut1999/SoC/assets/165283786/c2a54ba5-2f09-42d9-bc41-915c19bad687)
   - We will see the following window:
@@ -60,7 +63,7 @@
 
 
 
- ## *lef* file extraction :
+ ## lef file extraction :
   - The __lef__ is now ready to be extracted so we will execute the following instructions to give a name of our choice to this layout.
 
     
