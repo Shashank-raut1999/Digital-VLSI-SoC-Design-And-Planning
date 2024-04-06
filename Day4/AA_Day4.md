@@ -12,7 +12,7 @@
 * [Running OPENLANE](#OPENLANE)
 * [Modifying parameters of cell](#Modifying-parameters-of-cell)
 * [Running OPENLANE](#OPENLANE)
-* [Timing Analysis with OpenSTA](#Timing-Analysis-with-OpenSTA-tool-after-synthesis-:)
+* [Timing Analysis with OpenSTA](#Timing-Analysis-with-OpenSTA-tool-after-synthesis)
       
 
 
@@ -208,7 +208,7 @@
   - **Our custom cell was successfully integrated into the picorv32a design.** 
 
 
-# Timing Analysis with OpenSTA tool after synthesis :
+# Timing Analysis with OpenSTA tool after synthesis 
 
  - We will do STA on the initial picorv32a design which had timing violations.
 
