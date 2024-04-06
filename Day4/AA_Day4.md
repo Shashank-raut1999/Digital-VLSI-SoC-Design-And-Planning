@@ -1,4 +1,11 @@
-# Day 4 :  Pre-layout timing analysis and importance of good clock tree
+# Day 4 
+
+
+# Pre-layout timing analysis and importance of good clock tree:
+---
+* [Guidelines](#Guidelines-to-be-followed-while-making-a-standard-cell)
+      
+
 
 ## Our task is to find the errors in the layout of *vsdstdcelldesign* and then fix them so that this layout can be plugged in the *picorv32a* process flow :
 - While doing placement, we need the layout inforamtion which is present in **lef** file. So we need to get this lef file first.
