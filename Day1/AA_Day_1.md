@@ -4,7 +4,7 @@
 # Inception of open-source EDA, OpenLANE and Sky130 PDK 
 ---
 ## Table of Content :
- * [1.Arduino Board](#1-Arduino-Board)
+ * [1)Arduino Board](#1-Arduino-Board)
 
 
 
