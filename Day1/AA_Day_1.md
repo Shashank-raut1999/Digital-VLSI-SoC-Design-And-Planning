@@ -5,7 +5,7 @@
 ---
 ## Table of Content :
  * [1) Arduino Board](#1-Arduino-Board)
- * [2) 2. Block diagram of a SoC](#2-Block-diagram-of-a-SoC(System-on-Chip))
+ * [2) Block diagram of a SoC](#2-Block-diagram-of-a-SoC)
 
 
 
@@ -18,7 +18,7 @@
 
  - This is an arduino microcontroller board. The encircled area shows the chip(microprocessor) which is interfaced with other components of the board. The designing of this chip from abstract level all the way down to the fabrication is done by RTL to GDSll flow. 
 
-## 2. Block diagram of a SoC(System on Chip)
+## 2. Block diagram of a SoC
 
   +  ![Processor Block Diagarm](<Block diagram of processor.png>)    
      
