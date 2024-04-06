@@ -12,9 +12,9 @@
 * [LAB Work](#6-LAB)
 * [Netlist Binding and Physical Cells](#Netlist-Binding-and-Physical-Cells)
 * [Cell Design Flow](#Cell-Design-Flow)
-    +[Inputs](#Inputs)
-    +[](#)
-    +[](#)
+    + [Inputs](#Inputs)
+    + [](#)
+    + [](#)
 
 
 ## 1. Defining the width and height of CORE and DIE :
