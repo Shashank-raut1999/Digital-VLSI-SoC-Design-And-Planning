@@ -1,4 +1,21 @@
-# <u>  Floorplanning And Introduction to library cells </u>
+# Day 2
+
+# Floorplanning And Introduction to library cells 
+---
+
+## Table of Content :
+* [Defining the width and height of CORE and DIE](#1-Defining-the-width-and-height-of-CORE-and-DIE)
+* [Concept of preplaced cells](#2-Concept-of-preplaced-cells)
+* [Need for Decoupling Capacitors](#3-Need-for-Decoupling-Capacitors)
+* [Need for Power Planning](#4-Need-for-Power-Planning)
+* [Pin placement and logical cell placement blockage](#5-Pin-placement-and-logical-cell-placement-blockage)
+* [LAB Work](#6-LAB)
+* [Netlist Binding and Physical Cells](#Netlist-Binding-and-Physical-Cells)
+* [Cell Design Flow](#Cell-Design-Flow)
+    +[Inputs](#Inputs)
+    +[](#)
+    +[](#)
+
 
 ## 1. Defining the width and height of CORE and DIE :
   - The width and height help us to analyse the terms like utilization factor and aspect ratio.
