@@ -112,7 +112,7 @@
 
 
 
-## SPICE Extraction :
+## SPICE Extraction 
 
  - To know the logical functions of the inverter, we will first extract the spice and then we will do the simulations in ngspice.
  - **Extracting SPICE**:
