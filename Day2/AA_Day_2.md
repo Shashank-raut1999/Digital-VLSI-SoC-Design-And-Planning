@@ -12,9 +12,9 @@
 * [LAB Work](#6-LAB)
 * [Netlist Binding and Physical Cells](#Netlist-Binding-and-Physical-Cells)
 * [Cell Design Flow](#Cell-Design-Flow)
-    + [Inputs](#1-Inputs)
-    + [Design Steps](#2-Design-Steps)
-    + [Characterization](#3-Characterization)
+    + [1)Inputs](#1-Inputs)
+    + [2)Design Steps](#2-Design-Steps)
+    + [3)Characterization](#3-Characterization)
     + [Timing Characterization](#Timing-Characterization)
 
 
