@@ -10,7 +10,9 @@
  * [4) Process Design Kit](#4-What-is-a-PDK)
  * [5) RTL to GDSll Flow](#5-Simple-RTL-to-GDSll-flow)
  * [6) Introduction to Openlane](#6-Introduction-to-Openlane)
- * [7) Design Preparation step](#8-Design-Preparation-step)
+ * [7) Openlane Directory Structure](#7-Openlane-Directory-Structure)
+ * [8) Design Preparation step](#8-Design-Preparation-step)
+   
 
 
 
@@ -145,6 +147,7 @@ It consists of the main processor , SDRAM chip(memory) , ADC (analog to digital 
  - ***command* --help** : shows the complete use that command
  - **clear**  : clears the terminal screen
 ```
+
 ## 7. Openlane Directory Structure: 
   - ![Openlane Directory](<Openlane directory.png>)
   - the 'skywater-pdk' file contains all the pdk files like timing libraries, lef lib, tech lib, cell lib etc. which are needed by foundry to fabricate that chip. These files are made to work with commercial EDA tools and not with opensource EDA tools. 
